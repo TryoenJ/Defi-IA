@@ -1,4 +1,4 @@
-,hotel_id,price,stock,city,date,language,mobile,avatar_id,group,brand,parking,pool,children_policy
+Unnamed: 0,hotel_id,price,stock,city,date,language,mobile,avatar_id,group,brand,parking,pool,children_policy
 0,834,91,0,copenhagen,2,hungarian,0,6048,Yin Yang,8 Premium,0,0,0
 1,757,151,1,copenhagen,2,hungarian,0,6048,Accar Hotels,Navatel,1,0,0
 2,893,229,0,copenhagen,2,hungarian,0,6048,Morriott International,Morriot,1,1,0
