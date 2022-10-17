@@ -254,3 +254,633 @@ order_requests,hotel_id,price,stock,city,date,language,mobile,avatar_id,group,br
 1,657,250,1,amsterdam,1,hungarian,1,6049,Chillton Worldwide,Quadrupletree,1,0,0
 1,581,145,0,amsterdam,1,hungarian,1,6049,Independant,Independant,1,0,0
 1,311,92,13,amsterdam,1,hungarian,1,6049,Independant,Independant,1,0,0
+3,658,163,29,amsterdam,22,danish,0,38457,Morriott International,CourtYord,1,0,0
+3,172,126,18,amsterdam,22,danish,0,38457,Accar Hotels,Navatel,1,0,0
+3,657,167,42,amsterdam,22,danish,0,38457,Chillton Worldwide,Quadrupletree,1,0,0
+3,585,77,23,amsterdam,22,danish,0,38457,Yin Yang,8 Premium,0,0,0
+3,685,275,46,amsterdam,22,danish,0,38457,Morriott International,Corlton,0,0,1
+3,676,74,10,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,214,191,35,amsterdam,22,danish,0,38457,Chillton Worldwide,Quadrupletree,0,1,0
+3,410,122,20,amsterdam,22,danish,0,38457,Accar Hotels,Navatel,0,0,0
+3,779,193,44,amsterdam,22,danish,0,38457,Morriott International,Morriot,1,0,2
+3,604,115,19,amsterdam,22,danish,0,38457,Accar Hotels,Navatel,1,0,0
+3,510,266,69,amsterdam,22,danish,0,38457,Morriott International,Corlton,0,0,0
+3,515,287,44,amsterdam,22,danish,0,38457,Accar Hotels,Safitel,1,1,0
+3,482,83,8,amsterdam,22,danish,0,38457,Accar Hotels,Ibas,1,0,0
+3,505,108,22,amsterdam,22,danish,0,38457,Independant,Independant,0,0,1
+3,82,112,23,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,441,195,32,amsterdam,22,danish,0,38457,Yin Yang,Royal Lotus,0,0,0
+3,867,147,26,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,234,161,26,amsterdam,22,danish,0,38457,Boss Western,J.Halliday Inn,0,0,0
+3,594,240,92,amsterdam,22,danish,0,38457,Chillton Worldwide,Chill Garden Inn,0,1,0
+3,85,111,19,amsterdam,22,danish,0,38457,Boss Western,Boss Western,1,0,0
+3,945,153,36,amsterdam,22,danish,0,38457,Chillton Worldwide,Tripletree,0,0,0
+3,625,195,41,amsterdam,22,danish,0,38457,Yin Yang,Royal Lotus,1,0,0
+3,52,161,25,amsterdam,22,danish,0,38457,Chillton Worldwide,Tripletree,0,0,0
+3,366,81,18,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,86,115,20,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,892,194,27,amsterdam,22,danish,0,38457,Chillton Worldwide,Quadrupletree,0,1,0
+3,88,136,18,amsterdam,22,danish,0,38457,Boss Western,Boss Western,0,0,0
+3,680,156,12,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,16,184,20,amsterdam,22,danish,0,38457,Chillton Worldwide,Tripletree,1,0,0
+3,253,264,60,amsterdam,22,danish,0,38457,Accar Hotels,Safitel,0,1,2
+3,783,103,9,amsterdam,22,danish,0,38457,Yin Yang,8 Premium,1,0,0
+3,902,171,49,amsterdam,22,danish,0,38457,Yin Yang,Royal Lotus,1,1,0
+3,507,117,18,amsterdam,22,danish,0,38457,Boss Western,Boss Western,0,0,0
+3,493,169,24,amsterdam,22,danish,0,38457,Chillton Worldwide,Tripletree,0,0,0
+3,311,106,26,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,373,117,22,amsterdam,22,danish,0,38457,Boss Western,Boss Western,1,0,0
+3,806,277,58,amsterdam,22,danish,0,38457,Chillton Worldwide,Chill Garden Inn,0,0,1
+3,140,124,18,amsterdam,22,danish,0,38457,Boss Western,Boss Western,0,0,0
+3,630,159,26,amsterdam,22,danish,0,38457,Boss Western,J.Halliday Inn,0,0,0
+3,724,284,44,amsterdam,22,danish,0,38457,Morriott International,Corlton,1,0,0
+3,317,188,35,amsterdam,22,danish,0,38457,Accar Hotels,Marcure,0,0,0
+3,762,180,22,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,1,1,0
+3,745,107,20,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,196,113,6,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,557,116,0,amsterdam,22,danish,0,38457,Accar Hotels,Navatel,0,0,0
+3,158,144,32,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,0,0,0
+3,352,103,45,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,743,172,28,amsterdam,22,danish,0,38457,Morriott International,CourtYord,1,1,0
+3,760,184,36,amsterdam,22,danish,0,38457,Yin Yang,Royal Lotus,0,0,0
+3,967,81,32,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,375,109,22,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,627,109,4,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,117,77,14,amsterdam,22,danish,0,38457,Yin Yang,8 Premium,1,0,0
+3,417,157,28,amsterdam,22,danish,0,38457,Morriott International,CourtYord,0,0,0
+3,925,105,20,amsterdam,22,danish,0,38457,Boss Western,Boss Western,1,0,0
+3,660,165,23,amsterdam,22,danish,0,38457,Chillton Worldwide,Tripletree,0,0,0
+3,387,258,51,amsterdam,22,danish,0,38457,Accar Hotels,Safitel,1,0,0
+3,83,162,22,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,0,0,0
+3,777,159,28,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,0,0,0
+3,77,263,57,amsterdam,22,danish,0,38457,Accar Hotels,Safitel,0,1,0
+3,22,174,22,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,1,0,0
+3,778,112,8,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,45,169,26,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,0,0,0
+3,430,163,69,amsterdam,22,danish,0,38457,Yin Yang,Royal Lotus,0,0,0
+3,807,273,48,amsterdam,22,danish,0,38457,Chillton Worldwide,Chill Garden Inn,0,1,0
+3,809,263,55,amsterdam,22,danish,0,38457,Chillton Worldwide,Chill Garden Inn,0,1,0
+3,256,81,10,amsterdam,22,danish,0,38457,Accar Hotels,Ibas,1,0,0
+3,706,130,17,amsterdam,22,danish,0,38457,Boss Western,Boss Western,0,0,1
+3,917,276,55,amsterdam,22,danish,0,38457,Morriott International,Corlton,1,1,0
+3,271,84,4,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,193,153,26,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,960,277,51,amsterdam,22,danish,0,38457,Chillton Worldwide,Chill Garden Inn,0,0,0
+3,12,81,10,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,111,127,16,amsterdam,22,danish,0,38457,Boss Western,Boss Western,1,0,0
+3,628,156,42,amsterdam,22,danish,0,38457,Boss Western,J.Halliday Inn,0,0,0
+3,570,111,22,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,269,157,24,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,0,1,0
+3,460,86,2,amsterdam,22,danish,0,38457,Accar Hotels,Ibas,0,0,0
+3,548,237,72,amsterdam,22,danish,0,38457,Morriott International,Corlton,0,1,0
+3,475,109,25,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,588,180,0,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,603,275,47,amsterdam,22,danish,0,38457,Morriott International,Corlton,0,1,0
+3,788,112,14,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,326,264,58,amsterdam,22,danish,0,38457,Chillton Worldwide,Chill Garden Inn,0,1,0
+3,921,84,22,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,303,195,34,amsterdam,22,danish,0,38457,Yin Yang,Royal Lotus,1,1,0
+3,933,156,26,amsterdam,22,danish,0,38457,Boss Western,J.Halliday Inn,1,0,0
+3,211,153,25,amsterdam,22,danish,0,38457,Morriott International,CourtYord,1,0,0
+3,230,108,21,amsterdam,22,danish,0,38457,Boss Western,Boss Western,1,0,0
+3,529,237,60,amsterdam,22,danish,0,38457,Morriott International,Corlton,1,0,1
+3,307,111,21,amsterdam,22,danish,0,38457,Accar Hotels,Navatel,1,0,0
+3,346,187,41,amsterdam,22,danish,0,38457,Chillton Worldwide,Quadrupletree,1,0,0
+3,157,284,43,amsterdam,22,danish,0,38457,Morriott International,Corlton,0,0,0
+3,679,156,26,amsterdam,22,danish,0,38457,Chillton Worldwide,Tripletree,1,0,0
+3,224,147,41,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,1,0,0
+3,103,187,52,amsterdam,22,danish,0,38457,Yin Yang,Royal Lotus,1,1,0
+3,581,154,17,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,166,118,24,amsterdam,22,danish,0,38457,Boss Western,Boss Western,0,0,0
+3,969,78,18,amsterdam,22,danish,0,38457,Accar Hotels,Ibas,1,0,0
+3,450,177,61,amsterdam,22,danish,0,38457,Morriott International,Morriot,0,0,0
+3,101,281,42,amsterdam,22,danish,0,38457,Accar Hotels,Safitel,1,0,0
+3,752,263,53,amsterdam,22,danish,0,38457,Accar Hotels,Safitel,0,0,0
+3,835,106,48,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,455,156,28,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,0,0,0
+3,9,87,20,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,918,307,51,amsterdam,22,danish,0,38457,Morriott International,Corlton,1,1,0
+3,283,105,24,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,34,81,11,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,10,157,26,amsterdam,22,danish,0,38457,Chillton Worldwide,Tripletree,0,0,0
+3,369,78,3,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,591,252,57,amsterdam,22,danish,0,38457,Accar Hotels,Safitel,0,0,0
+3,971,163,24,amsterdam,22,danish,0,38457,Chillton Worldwide,Tripletree,1,0,0
+3,715,161,24,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,0,0,0
+3,442,167,43,amsterdam,22,danish,0,38457,Accar Hotels,Marcure,0,0,0
+3,429,258,58,amsterdam,22,danish,0,38457,Chillton Worldwide,Chill Garden Inn,0,0,0
+3,146,180,42,amsterdam,22,danish,0,38457,Chillton Worldwide,Quadrupletree,0,0,0
+3,587,157,18,amsterdam,22,danish,0,38457,Boss Western,J.Halliday Inn,0,0,0
+3,212,206,32,amsterdam,22,danish,0,38457,Yin Yang,Royal Lotus,0,1,0
+3,517,119,30,amsterdam,22,danish,0,38457,Boss Western,Boss Western,1,0,0
+3,821,111,24,amsterdam,22,danish,0,38457,Independant,Independant,0,0,0
+3,223,156,16,amsterdam,22,danish,0,38457,Boss Western,J.Halliday Inn,0,0,0
+3,880,124,19,amsterdam,22,danish,0,38457,Boss Western,Boss Western,0,0,0
+3,891,107,10,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,674,124,28,amsterdam,22,danish,0,38457,Accar Hotels,Navatel,0,0,0
+3,264,82,9,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,750,116,12,amsterdam,22,danish,0,38457,Independant,Independant,1,1,0
+3,163,180,47,amsterdam,22,danish,0,38457,Yin Yang,Royal Lotus,0,1,0
+3,218,197,33,amsterdam,22,danish,0,38457,Yin Yang,Royal Lotus,0,0,1
+3,567,84,9,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+3,916,111,27,amsterdam,22,danish,0,38457,Boss Western,Boss Western,1,0,0
+3,465,254,59,amsterdam,22,danish,0,38457,Morriott International,Corlton,1,1,0
+3,105,161,24,amsterdam,22,danish,0,38457,Yin Yang,Ardisson,0,0,0
+3,878,112,34,amsterdam,22,danish,0,38457,Independant,Independant,1,0,0
+4,429,248,35,amsterdam,14,german,1,38457,Chillton Worldwide,Chill Garden Inn,0,0,0
+4,83,174,14,amsterdam,14,german,1,38457,Yin Yang,Ardisson,0,0,0
+4,375,105,4,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,211,147,0,amsterdam,14,german,1,38457,Morriott International,CourtYord,1,0,0
+4,441,211,20,amsterdam,14,german,1,38457,Yin Yang,Royal Lotus,0,0,0
+4,105,173,14,amsterdam,14,german,1,38457,Yin Yang,Ardisson,0,0,0
+4,88,131,5,amsterdam,14,german,1,38457,Boss Western,Boss Western,0,0,0
+4,196,109,0,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,821,109,12,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,557,111,0,amsterdam,14,german,1,38457,Accar Hotels,Navatel,0,0,0
+4,778,108,0,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,515,330,18,amsterdam,14,german,1,38457,Accar Hotels,Safitel,1,1,0
+4,892,224,12,amsterdam,14,german,1,38457,Chillton Worldwide,Quadrupletree,0,1,0
+4,77,334,17,amsterdam,14,german,1,38457,Accar Hotels,Safitel,0,1,0
+4,916,120,11,amsterdam,14,german,1,38457,Boss Western,Boss Western,1,0,0
+4,680,150,1,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,971,176,14,amsterdam,14,german,1,38457,Chillton Worldwide,Tripletree,1,0,0
+4,140,151,6,amsterdam,14,german,1,38457,Boss Western,Boss Western,0,0,0
+4,505,108,10,amsterdam,14,german,1,38457,Independant,Independant,0,0,1
+4,264,79,0,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,493,174,9,amsterdam,14,german,1,38457,Chillton Worldwide,Tripletree,0,0,0
+4,867,147,7,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,172,131,8,amsterdam,14,german,1,38457,Accar Hotels,Navatel,1,0,0
+4,570,107,7,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,101,322,18,amsterdam,14,german,1,38457,Accar Hotels,Safitel,1,0,0
+4,969,82,7,amsterdam,14,german,1,38457,Accar Hotels,Ibas,1,0,0
+4,224,142,26,amsterdam,14,german,1,38457,Yin Yang,Ardisson,1,0,0
+4,157,295,26,amsterdam,14,german,1,38457,Morriott International,Corlton,0,0,0
+4,685,325,17,amsterdam,14,german,1,38457,Morriott International,Corlton,0,0,1
+4,724,295,25,amsterdam,14,german,1,38457,Morriott International,Corlton,1,0,0
+4,234,173,11,amsterdam,14,german,1,38457,Boss Western,J.Halliday Inn,0,0,0
+4,163,173,24,amsterdam,14,german,1,38457,Yin Yang,Royal Lotus,0,1,0
+4,627,105,0,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,658,176,12,amsterdam,14,german,1,38457,Morriott International,CourtYord,1,0,0
+4,960,330,18,amsterdam,14,german,1,38457,Chillton Worldwide,Chill Garden Inn,0,0,0
+4,809,323,19,amsterdam,14,german,1,38457,Chillton Worldwide,Chill Garden Inn,0,1,0
+4,417,176,10,amsterdam,14,german,1,38457,Morriott International,CourtYord,0,0,0
+4,760,220,14,amsterdam,14,german,1,38457,Yin Yang,Royal Lotus,0,0,0
+4,783,99,0,amsterdam,14,german,1,38457,Yin Yang,8 Premium,1,0,0
+4,214,235,12,amsterdam,14,german,1,38457,Chillton Worldwide,Quadrupletree,0,1,0
+4,604,129,10,amsterdam,14,german,1,38457,Accar Hotels,Navatel,1,0,0
+4,373,143,8,amsterdam,14,german,1,38457,Boss Western,Boss Western,1,0,0
+4,442,190,19,amsterdam,14,german,1,38457,Accar Hotels,Marcure,0,0,0
+4,193,147,9,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,307,125,11,amsterdam,14,german,1,38457,Accar Hotels,Navatel,1,0,0
+4,588,173,0,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,166,118,12,amsterdam,14,german,1,38457,Boss Western,Boss Western,0,0,0
+4,430,157,36,amsterdam,14,german,1,38457,Yin Yang,Royal Lotus,0,0,0
+4,103,180,36,amsterdam,14,german,1,38457,Yin Yang,Royal Lotus,1,1,0
+4,86,111,0,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,455,174,15,amsterdam,14,german,1,38457,Yin Yang,Ardisson,0,0,0
+4,482,80,0,amsterdam,14,german,1,38457,Accar Hotels,Ibas,1,0,0
+4,581,148,8,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,806,266,32,amsterdam,14,german,1,38457,Chillton Worldwide,Chill Garden Inn,0,0,1
+4,510,319,26,amsterdam,14,german,1,38457,Morriott International,Corlton,0,0,0
+4,878,108,16,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,743,165,16,amsterdam,14,german,1,38457,Morriott International,CourtYord,1,1,0
+4,346,237,15,amsterdam,14,german,1,38457,Chillton Worldwide,Quadrupletree,1,0,0
+4,256,78,1,amsterdam,14,german,1,38457,Accar Hotels,Ibas,1,0,0
+4,967,78,16,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,410,126,11,amsterdam,14,german,1,38457,Accar Hotels,Navatel,0,0,0
+4,369,75,0,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,85,125,8,amsterdam,14,german,1,38457,Boss Western,Boss Western,1,0,0
+4,548,227,44,amsterdam,14,german,1,38457,Morriott International,Corlton,0,1,0
+4,460,83,0,amsterdam,14,german,1,38457,Accar Hotels,Ibas,0,0,0
+4,52,173,12,amsterdam,14,german,1,38457,Chillton Worldwide,Tripletree,0,0,0
+4,745,103,11,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,880,129,3,amsterdam,14,german,1,38457,Boss Western,Boss Western,0,0,0
+4,628,150,14,amsterdam,14,german,1,38457,Boss Western,J.Halliday Inn,0,0,0
+4,22,173,10,amsterdam,14,german,1,38457,Yin Yang,Ardisson,1,0,0
+4,630,153,0,amsterdam,14,german,1,38457,Boss Western,J.Halliday Inn,0,0,0
+4,777,179,12,amsterdam,14,german,1,38457,Yin Yang,Ardisson,0,0,0
+4,303,211,15,amsterdam,14,german,1,38457,Yin Yang,Royal Lotus,1,1,0
+4,45,174,8,amsterdam,14,german,1,38457,Yin Yang,Ardisson,0,0,0
+4,465,325,22,amsterdam,14,german,1,38457,Morriott International,Corlton,1,1,0
+4,835,102,37,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,585,74,15,amsterdam,14,german,1,38457,Yin Yang,8 Premium,0,0,0
+4,16,176,0,amsterdam,14,german,1,38457,Chillton Worldwide,Tripletree,1,0,0
+4,517,114,14,amsterdam,14,german,1,38457,Boss Western,Boss Western,1,0,0
+4,283,114,11,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,34,78,3,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,660,171,10,amsterdam,14,german,1,38457,Chillton Worldwide,Tripletree,0,0,0
+4,271,81,0,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,902,209,20,amsterdam,14,german,1,38457,Yin Yang,Royal Lotus,1,1,0
+4,212,235,12,amsterdam,14,german,1,38457,Yin Yang,Royal Lotus,0,1,0
+4,921,91,14,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,218,233,12,amsterdam,14,german,1,38457,Yin Yang,Royal Lotus,0,0,1
+4,269,151,0,amsterdam,14,german,1,38457,Yin Yang,Ardisson,0,1,0
+4,715,173,12,amsterdam,14,german,1,38457,Yin Yang,Ardisson,0,0,0
+4,591,313,24,amsterdam,14,german,1,38457,Accar Hotels,Safitel,0,0,0
+4,891,122,6,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,625,188,19,amsterdam,14,german,1,38457,Yin Yang,Royal Lotus,1,0,0
+4,111,145,8,amsterdam,14,german,1,38457,Boss Western,Boss Western,1,0,0
+4,9,84,0,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,230,150,7,amsterdam,14,german,1,38457,Boss Western,Boss Western,1,0,0
+4,750,112,10,amsterdam,14,german,1,38457,Independant,Independant,1,1,0
+4,450,170,43,amsterdam,14,german,1,38457,Morriott International,Morriot,0,0,0
+4,158,176,14,amsterdam,14,german,1,38457,Yin Yang,Ardisson,0,0,0
+4,779,186,20,amsterdam,14,german,1,38457,Morriott International,Morriot,1,0,2
+4,762,173,14,amsterdam,14,german,1,38457,Yin Yang,Ardisson,1,1,0
+4,752,326,19,amsterdam,14,german,1,38457,Accar Hotels,Safitel,0,0,0
+4,679,150,7,amsterdam,14,german,1,38457,Chillton Worldwide,Tripletree,1,0,0
+4,529,238,20,amsterdam,14,german,1,38457,Morriott International,Corlton,1,0,1
+4,706,125,2,amsterdam,14,german,1,38457,Boss Western,Boss Western,0,0,1
+4,925,123,8,amsterdam,14,german,1,38457,Boss Western,Boss Western,1,0,0
+4,326,285,25,amsterdam,14,german,1,38457,Chillton Worldwide,Chill Garden Inn,0,1,0
+4,223,150,0,amsterdam,14,german,1,38457,Boss Western,J.Halliday Inn,0,0,0
+4,567,91,4,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,674,124,11,amsterdam,14,german,1,38457,Accar Hotels,Navatel,0,0,0
+4,387,330,17,amsterdam,14,german,1,38457,Accar Hotels,Safitel,1,0,0
+4,12,78,2,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,788,108,0,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,82,108,12,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+4,603,264,19,amsterdam,14,german,1,38457,Morriott International,Corlton,0,1,0
+4,917,328,22,amsterdam,14,german,1,38457,Morriott International,Corlton,1,1,0
+4,317,195,20,amsterdam,14,german,1,38457,Accar Hotels,Marcure,0,0,0
+4,933,150,0,amsterdam,14,german,1,38457,Boss Western,J.Halliday Inn,1,0,0
+4,311,102,21,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,807,323,17,amsterdam,14,german,1,38457,Chillton Worldwide,Chill Garden Inn,0,1,0
+4,475,105,4,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,146,211,18,amsterdam,14,german,1,38457,Chillton Worldwide,Quadrupletree,0,0,0
+4,918,336,23,amsterdam,14,german,1,38457,Morriott International,Corlton,1,1,0
+4,657,174,17,amsterdam,14,german,1,38457,Chillton Worldwide,Quadrupletree,1,0,0
+4,945,179,14,amsterdam,14,german,1,38457,Chillton Worldwide,Tripletree,0,0,0
+4,366,78,0,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,507,125,11,amsterdam,14,german,1,38457,Boss Western,Boss Western,0,0,0
+4,117,74,7,amsterdam,14,german,1,38457,Yin Yang,8 Premium,1,0,0
+4,253,315,25,amsterdam,14,german,1,38457,Accar Hotels,Safitel,0,1,2
+4,352,99,33,amsterdam,14,german,1,38457,Independant,Independant,1,0,0
+4,587,151,0,amsterdam,14,german,1,38457,Boss Western,J.Halliday Inn,0,0,0
+4,10,151,8,amsterdam,14,german,1,38457,Chillton Worldwide,Tripletree,0,0,0
+4,594,251,34,amsterdam,14,german,1,38457,Chillton Worldwide,Chill Garden Inn,0,1,0
+4,676,87,5,amsterdam,14,german,1,38457,Independant,Independant,0,0,0
+5,896,60,0,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,215,85,11,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,976,87,6,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,758,63,20,vilnius,20,portuguese,1,38469,Accar Hotels,Ibas,0,0,0
+5,545,142,17,vilnius,20,portuguese,1,38469,Chillton Worldwide,Tripletree,0,0,0
+5,89,103,15,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,957,66,2,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,502,93,16,vilnius,20,portuguese,1,38469,Boss Western,Boss Western,0,0,0
+5,448,118,20,vilnius,20,portuguese,1,38469,Yin Yang,Ardisson,0,0,0
+5,155,95,16,vilnius,20,portuguese,1,38469,Boss Western,Boss Western,0,0,0
+5,362,86,18,vilnius,20,portuguese,1,38469,Accar Hotels,Navatel,1,0,0
+5,408,124,23,vilnius,20,portuguese,1,38469,Morriott International,CourtYord,1,0,0
+5,294,64,10,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,593,60,29,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,464,84,16,vilnius,20,portuguese,1,38469,Accar Hotels,Navatel,1,0,0
+5,76,62,0,vilnius,20,portuguese,1,38469,Yin Yang,8 Premium,0,0,0
+5,406,59,10,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,40,118,31,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,0,0,0
+5,670,84,4,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,432,151,31,vilnius,20,portuguese,1,38469,Morriott International,Morriot,0,0,0
+5,19,59,11,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,197,118,12,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,1,0,0
+5,189,115,30,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,0,0,0
+5,177,162,27,vilnius,20,portuguese,1,38469,Accar Hotels,Marcure,0,1,0
+5,461,60,26,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,820,160,22,vilnius,20,portuguese,1,38469,Yin Yang,Royal Lotus,0,0,0
+5,498,104,14,vilnius,20,portuguese,1,38469,Boss Western,Boss Western,0,0,0
+5,61,202,52,vilnius,20,portuguese,1,38469,Morriott International,Corlton,1,1,0
+5,589,64,4,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,1
+5,490,142,18,vilnius,20,portuguese,1,38469,Yin Yang,Ardisson,1,0,0
+5,340,81,10,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,355,89,20,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,320,119,0,vilnius,20,portuguese,1,38469,Morriott International,CourtYord,0,0,0
+5,217,133,46,vilnius,20,portuguese,1,38469,Yin Yang,Royal Lotus,1,0,0
+5,503,188,46,vilnius,20,portuguese,1,38469,Morriott International,Corlton,0,1,0
+5,956,96,17,vilnius,20,portuguese,1,38469,Boss Western,Boss Western,1,0,0
+5,819,126,55,vilnius,20,portuguese,1,38469,Yin Yang,Royal Lotus,0,0,0
+5,568,87,28,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,479,162,25,vilnius,20,portuguese,1,38469,Accar Hotels,Marcure,1,0,0
+5,125,58,14,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,533,136,37,vilnius,20,portuguese,1,38469,Morriott International,Morriot,1,1,0
+5,420,60,14,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,678,83,24,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,887,123,20,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,0,0,0
+5,409,99,20,vilnius,20,portuguese,1,38469,Accar Hotels,Navatel,1,0,0
+5,183,147,35,vilnius,20,portuguese,1,38469,Accar Hotels,Marcure,1,1,0
+5,104,60,31,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,632,89,10,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,950,84,8,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,605,161,22,vilnius,20,portuguese,1,38469,Yin Yang,Royal Lotus,1,0,0
+5,607,139,18,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,0,0,0
+5,740,131,21,vilnius,20,portuguese,1,38469,Yin Yang,Ardisson,0,0,0
+5,74,120,24,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,0,0,1
+5,356,83,14,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,687,139,20,vilnius,20,portuguese,1,38469,Chillton Worldwide,Tripletree,0,0,0
+5,72,60,12,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,221,57,15,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,955,74,8,vilnius,20,portuguese,1,38469,Yin Yang,8 Premium,0,0,0
+5,288,120,19,vilnius,20,portuguese,1,38469,Morriott International,CourtYord,1,0,0
+5,620,157,25,vilnius,20,portuguese,1,38469,Chillton Worldwide,Quadrupletree,0,1,0
+5,80,221,39,vilnius,20,portuguese,1,38469,Morriott International,Corlton,1,1,0
+5,59,118,6,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,1,0,0
+5,879,120,30,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,0,0,0
+5,914,61,9,vilnius,20,portuguese,1,38469,Yin Yang,8 Premium,0,0,0
+5,648,64,4,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,667,136,19,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,1,0,0
+5,813,120,0,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,0,0,0
+5,198,124,20,vilnius,20,portuguese,1,38469,Boss Western,J.Halliday Inn,0,0,0
+5,47,161,27,vilnius,20,portuguese,1,38469,Accar Hotels,Marcure,1,0,0
+5,516,227,38,vilnius,20,portuguese,1,38469,Morriott International,Corlton,1,0,2
+5,551,63,15,vilnius,20,portuguese,1,38469,Yin Yang,8 Premium,1,0,0
+5,881,143,36,vilnius,20,portuguese,1,38469,Morriott International,Morriot,0,1,0
+5,451,116,27,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,765,61,17,vilnius,20,portuguese,1,38469,Independant,Independant,0,0,0
+5,794,213,54,vilnius,20,portuguese,1,38469,Morriott International,Corlton,1,0,0
+5,394,72,16,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,118,94,19,vilnius,20,portuguese,1,38469,Boss Western,Boss Western,1,0,0
+5,84,203,52,vilnius,20,portuguese,1,38469,Accar Hotels,Safitel,0,1,0
+5,240,148,33,vilnius,20,portuguese,1,38469,Yin Yang,Royal Lotus,0,0,2
+5,247,143,36,vilnius,20,portuguese,1,38469,Chillton Worldwide,Quadrupletree,1,0,0
+5,623,189,50,vilnius,20,portuguese,1,38469,Morriott International,Corlton,0,1,0
+5,520,89,11,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,18,55,11,vilnius,20,portuguese,1,38469,Yin Yang,8 Premium,0,0,0
+5,654,144,31,vilnius,20,portuguese,1,38469,Yin Yang,Royal Lotus,0,1,0
+5,5,128,41,vilnius,20,portuguese,1,38469,Yin Yang,Royal Lotus,0,1,0
+5,204,60,10,vilnius,20,portuguese,1,38469,Independant,Independant,1,0,0
+5,136,91,19,vilnius,20,portuguese,1,38469,Boss Western,Boss Western,0,0,0
+6,922,356,7,copenhagen,10,italian,1,38469,Yin Yang,Royal Lotus,0,1,0
+6,900,244,5,copenhagen,10,italian,1,38469,Accar Hotels,Marcure,1,0,0
+6,487,173,22,copenhagen,10,italian,1,38469,Morriott International,CourtYord,0,0,0
+6,350,443,17,copenhagen,10,italian,1,38469,Chillton Worldwide,Chill Garden Inn,1,1,0
+6,938,126,4,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,691,93,2,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,611,212,5,copenhagen,10,italian,1,38469,Chillton Worldwide,Tripletree,1,0,0
+6,367,100,4,copenhagen,10,italian,1,38469,Yin Yang,8 Premium,0,0,0
+6,365,98,0,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,251,171,1,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,523,108,7,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,559,249,7,copenhagen,10,italian,1,38469,Accar Hotels,Marcure,0,0,2
+6,834,95,0,copenhagen,10,italian,1,38469,Yin Yang,8 Premium,0,0,0
+6,990,175,4,copenhagen,10,italian,1,38469,Boss Western,J.Halliday Inn,0,0,0
+6,961,238,13,copenhagen,10,italian,1,38469,Morriott International,Morriot,0,1,0
+6,716,149,0,copenhagen,10,italian,1,38469,Boss Western,Boss Western,0,0,0
+6,122,416,18,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,0,1,1
+6,908,501,10,copenhagen,10,italian,1,38469,Morriott International,Corlton,1,1,0
+6,433,149,8,copenhagen,10,italian,1,38469,Accar Hotels,Navatel,0,0,0
+6,562,278,7,copenhagen,10,italian,1,38469,Chillton Worldwide,Quadrupletree,0,0,0
+6,497,280,9,copenhagen,10,italian,1,38469,Chillton Worldwide,Quadrupletree,0,0,2
+6,973,178,0,copenhagen,10,italian,1,38469,Boss Western,J.Halliday Inn,0,0,0
+6,698,240,14,copenhagen,10,italian,1,38469,Chillton Worldwide,Quadrupletree,0,0,0
+6,23,206,10,copenhagen,10,italian,1,38469,Yin Yang,Ardisson,1,0,0
+6,202,206,10,copenhagen,10,italian,1,38469,Morriott International,CourtYord,1,0,0
+6,556,182,0,copenhagen,10,italian,1,38469,Boss Western,J.Halliday Inn,1,0,0
+6,766,487,10,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,0,1,0
+6,695,210,10,copenhagen,10,italian,1,38469,Yin Yang,Ardisson,1,0,0
+6,435,387,10,copenhagen,10,italian,1,38469,Chillton Worldwide,Chill Garden Inn,0,1,0
+6,319,396,19,copenhagen,10,italian,1,38469,Chillton Worldwide,Chill Garden Inn,1,0,0
+6,391,199,10,copenhagen,10,italian,1,38469,Boss Western,J.Halliday Inn,1,0,0
+6,829,210,10,copenhagen,10,italian,1,38469,Boss Western,J.Halliday Inn,0,0,0
+6,952,98,0,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,830,93,8,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,958,249,0,copenhagen,10,italian,1,38469,Accar Hotels,Marcure,1,0,0
+6,849,206,10,copenhagen,10,italian,1,38469,Morriott International,CourtYord,0,0,0
+6,443,151,8,copenhagen,10,italian,1,38469,Accar Hotels,Navatel,0,0,0
+6,58,335,7,copenhagen,10,italian,1,38469,Yin Yang,Royal Lotus,1,0,2
+6,981,114,3,copenhagen,10,italian,1,38469,Yin Yang,8 Premium,0,0,0
+6,772,340,0,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,1,0,0
+6,96,162,6,copenhagen,10,italian,1,38469,Boss Western,Boss Western,0,0,0
+6,876,147,0,copenhagen,10,italian,1,38469,Boss Western,Boss Western,0,0,0
+6,425,260,8,copenhagen,10,italian,1,38469,Morriott International,Morriot,0,0,0
+6,1,99,0,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,481,99,0,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,690,206,18,copenhagen,10,italian,1,38469,Yin Yang,Royal Lotus,1,1,0
+6,43,83,26,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,664,406,10,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,0,1,0
+6,309,98,0,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,655,365,10,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,0,0,1
+6,688,91,0,copenhagen,10,italian,1,38469,Independant,Independant,0,0,1
+6,831,112,6,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,445,93,0,copenhagen,10,italian,1,38469,Yin Yang,8 Premium,0,0,0
+6,50,155,8,copenhagen,10,italian,1,38469,Boss Western,Boss Western,0,0,0
+6,959,230,15,copenhagen,10,italian,1,38469,Chillton Worldwide,Quadrupletree,1,1,0
+6,99,210,0,copenhagen,10,italian,1,38469,Morriott International,CourtYord,0,1,0
+6,711,146,9,copenhagen,10,italian,1,38469,Boss Western,Boss Western,0,0,0
+6,546,112,7,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,669,274,12,copenhagen,10,italian,1,38469,Yin Yang,Royal Lotus,0,0,0
+6,463,101,0,copenhagen,10,italian,1,38469,Yin Yang,8 Premium,0,0,0
+6,100,91,0,copenhagen,10,italian,1,38469,Accar Hotels,Ibas,1,0,0
+6,92,88,11,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,994,201,10,copenhagen,10,italian,1,38469,Yin Yang,Ardisson,0,0,0
+6,596,177,0,copenhagen,10,italian,1,38469,Chillton Worldwide,Tripletree,0,0,0
+6,770,350,6,copenhagen,10,italian,1,38469,Morriott International,Morriot,1,1,0
+6,53,98,0,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,539,290,22,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,1,1,0
+6,506,154,4,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,329,249,10,copenhagen,10,italian,1,38469,Morriott International,Morriot,1,0,0
+6,869,489,9,copenhagen,10,italian,1,38469,Morriott International,Corlton,1,1,0
+6,930,122,14,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,402,134,0,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,894,351,15,copenhagen,10,italian,1,38469,Chillton Worldwide,Chill Garden Inn,1,0,2
+6,332,278,10,copenhagen,10,italian,1,38469,Chillton Worldwide,Quadrupletree,1,1,0
+6,707,349,13,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,0,1,0
+6,243,101,0,copenhagen,10,italian,1,38469,Yin Yang,8 Premium,1,0,0
+6,124,372,17,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,0,0,0
+6,514,363,15,copenhagen,10,italian,1,38469,Morriott International,Corlton,0,0,0
+6,855,262,10,copenhagen,10,italian,1,38469,Yin Yang,Royal Lotus,0,0,0
+6,528,365,11,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,1,0,0
+6,32,182,0,copenhagen,10,italian,1,38469,Morriott International,CourtYord,0,0,0
+6,405,101,0,copenhagen,10,italian,1,38469,Yin Yang,8 Premium,1,0,0
+6,431,128,0,copenhagen,10,italian,1,38469,Accar Hotels,Navatel,1,0,0
+6,812,208,2,copenhagen,10,italian,1,38469,Morriott International,CourtYord,1,0,0
+6,624,346,7,copenhagen,10,italian,1,38469,Chillton Worldwide,Quadrupletree,0,1,0
+6,78,385,10,copenhagen,10,italian,1,38469,Chillton Worldwide,Chill Garden Inn,0,0,0
+6,519,260,9,copenhagen,10,italian,1,38469,Yin Yang,Royal Lotus,0,0,0
+6,518,202,4,copenhagen,10,italian,1,38469,Boss Western,Boss Western,0,0,0
+6,865,288,24,copenhagen,10,italian,1,38469,Chillton Worldwide,Chill Garden Inn,1,1,0
+6,194,123,0,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,541,161,8,copenhagen,10,italian,1,38469,Boss Western,Boss Western,1,0,0
+6,434,119,0,copenhagen,10,italian,1,38469,Accar Hotels,Ibas,0,0,0
+6,638,159,22,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,726,338,19,copenhagen,10,italian,1,38469,Morriott International,Corlton,1,0,0
+6,771,498,10,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,1,0,0
+6,318,147,8,copenhagen,10,italian,1,38469,Boss Western,Boss Western,1,0,0
+6,249,91,10,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,267,180,0,copenhagen,10,italian,1,38469,Boss Western,J.Halliday Inn,1,0,0
+6,6,125,0,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,401,204,9,copenhagen,10,italian,1,38469,Boss Western,J.Halliday Inn,0,0,0
+6,36,201,0,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,622,172,6,copenhagen,10,italian,1,38469,Boss Western,Boss Western,1,0,0
+6,547,210,10,copenhagen,10,italian,1,38469,Yin Yang,Ardisson,1,0,0
+6,898,96,0,copenhagen,10,italian,1,38469,Yin Yang,8 Premium,1,0,0
+6,280,122,24,copenhagen,10,italian,1,38469,Boss Western,Boss Western,0,0,0
+6,872,97,7,copenhagen,10,italian,1,38469,Yin Yang,8 Premium,0,0,0
+6,91,134,0,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,805,165,16,copenhagen,10,italian,1,38469,Yin Yang,Ardisson,0,0,0
+6,60,98,0,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,989,112,2,copenhagen,10,italian,1,38469,Accar Hotels,Ibas,0,0,0
+6,422,401,11,copenhagen,10,italian,1,38469,Morriott International,Corlton,0,1,0
+6,744,177,0,copenhagen,10,italian,1,38469,Boss Western,J.Halliday Inn,0,0,0
+6,348,206,10,copenhagen,10,italian,1,38469,Morriott International,CourtYord,0,0,0
+6,757,157,8,copenhagen,10,italian,1,38469,Accar Hotels,Navatel,1,0,0
+6,818,180,0,copenhagen,10,italian,1,38469,Yin Yang,Ardisson,0,0,0
+6,532,356,7,copenhagen,10,italian,1,38469,Yin Yang,Royal Lotus,1,1,0
+6,90,208,10,copenhagen,10,italian,1,38469,Yin Yang,Ardisson,1,0,0
+6,983,95,3,copenhagen,10,italian,1,38469,Yin Yang,8 Premium,0,0,0
+6,978,349,20,copenhagen,10,italian,1,38469,Chillton Worldwide,Chill Garden Inn,1,0,0
+6,793,174,0,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,358,258,8,copenhagen,10,italian,1,38469,Accar Hotels,Marcure,0,0,0
+6,995,223,14,copenhagen,10,italian,1,38469,Chillton Worldwide,Quadrupletree,0,0,0
+6,893,238,0,copenhagen,10,italian,1,38469,Morriott International,Morriot,1,1,0
+6,951,91,7,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,349,268,9,copenhagen,10,italian,1,38469,Yin Yang,Royal Lotus,0,1,0
+6,844,391,10,copenhagen,10,italian,1,38469,Morriott International,Corlton,0,0,0
+6,385,344,11,copenhagen,10,italian,1,38469,Accar Hotels,Safitel,0,0,0
+6,291,266,13,copenhagen,10,italian,1,38469,Accar Hotels,Marcure,0,0,0
+6,289,146,0,copenhagen,10,italian,1,38469,Independant,Independant,1,0,0
+6,531,189,12,copenhagen,10,italian,1,38469,Yin Yang,Ardisson,1,0,0
+6,508,282,10,copenhagen,10,italian,1,38469,Yin Yang,Royal Lotus,1,1,0
+6,335,94,0,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,826,204,19,copenhagen,10,italian,1,38469,Accar Hotels,Marcure,1,1,0
+6,616,206,8,copenhagen,10,italian,1,38469,Boss Western,J.Halliday Inn,0,0,0
+6,142,406,19,copenhagen,10,italian,1,38469,Morriott International,Corlton,1,1,0
+6,110,210,10,copenhagen,10,italian,1,38469,Chillton Worldwide,Tripletree,0,0,0
+6,572,240,0,copenhagen,10,italian,1,38469,Accar Hotels,Marcure,1,0,0
+6,153,346,7,copenhagen,10,italian,1,38469,Yin Yang,Royal Lotus,1,1,2
+6,407,330,7,copenhagen,10,italian,1,38469,Accar Hotels,Marcure,0,1,0
+6,300,151,7,copenhagen,10,italian,1,38469,Boss Western,Boss Western,1,0,0
+6,720,487,10,copenhagen,10,italian,1,38469,Chillton Worldwide,Chill Garden Inn,0,0,2
+6,727,126,0,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,113,89,5,copenhagen,10,italian,1,38469,Independant,Independant,0,0,0
+6,761,151,4,copenhagen,10,italian,1,38469,Boss Western,Boss Western,0,0,0
+7,917,335,18,amsterdam,12,spanish,0,38470,Morriott International,Corlton,1,1,0
+7,193,150,7,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,715,177,9,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,0,0,0
+7,34,80,1,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,685,332,13,amsterdam,12,spanish,0,38470,Morriott International,Corlton,0,0,1
+7,269,154,0,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,0,1,0
+7,788,110,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,807,330,13,amsterdam,12,spanish,0,38470,Chillton Worldwide,Chill Garden Inn,0,1,0
+7,450,174,39,amsterdam,12,spanish,0,38470,Morriott International,Morriot,0,0,0
+7,967,80,10,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,224,145,22,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,1,0,0
+7,630,156,0,amsterdam,12,spanish,0,38470,Boss Western,J.Halliday Inn,0,0,0
+7,505,110,7,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,1
+7,307,128,9,amsterdam,12,spanish,0,38470,Accar Hotels,Navatel,1,0,0
+7,105,177,12,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,0,0,0
+7,867,150,2,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,166,121,10,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,0,0,0
+7,892,229,9,amsterdam,12,spanish,0,38470,Chillton Worldwide,Quadrupletree,0,1,0
+7,918,342,19,amsterdam,12,spanish,0,38470,Morriott International,Corlton,1,1,0
+7,603,290,15,amsterdam,12,spanish,0,38470,Morriott International,Corlton,0,1,0
+7,417,180,4,amsterdam,12,spanish,0,38470,Morriott International,CourtYord,0,0,0
+7,679,153,3,amsterdam,12,spanish,0,38470,Chillton Worldwide,Tripletree,1,0,0
+7,625,215,15,amsterdam,12,spanish,0,38470,Yin Yang,Royal Lotus,1,0,0
+7,760,225,11,amsterdam,12,spanish,0,38470,Yin Yang,Royal Lotus,0,0,0
+7,101,329,14,amsterdam,12,spanish,0,38470,Accar Hotels,Safitel,1,0,0
+7,806,272,28,amsterdam,12,spanish,0,38470,Chillton Worldwide,Chill Garden Inn,0,0,1
+7,971,180,12,amsterdam,12,spanish,0,38470,Chillton Worldwide,Tripletree,1,0,0
+7,230,153,5,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,1,0,0
+7,809,330,15,amsterdam,12,spanish,0,38470,Chillton Worldwide,Chill Garden Inn,0,1,0
+7,750,114,9,amsterdam,12,spanish,0,38470,Independant,Independant,1,1,0
+7,77,340,13,amsterdam,12,spanish,0,38470,Accar Hotels,Safitel,0,1,0
+7,172,133,6,amsterdam,12,spanish,0,38470,Accar Hotels,Navatel,1,0,0
+7,674,136,9,amsterdam,12,spanish,0,38470,Accar Hotels,Navatel,0,0,0
+7,158,180,12,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,0,0,0
+7,515,337,14,amsterdam,12,spanish,0,38470,Accar Hotels,Safitel,1,1,0
+7,12,80,1,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,10,154,4,amsterdam,12,spanish,0,38470,Chillton Worldwide,Tripletree,0,0,0
+7,256,79,0,amsterdam,12,spanish,0,38470,Accar Hotels,Ibas,1,0,0
+7,657,178,13,amsterdam,12,spanish,0,38470,Chillton Worldwide,Quadrupletree,1,0,0
+7,510,359,22,amsterdam,12,spanish,0,38470,Morriott International,Corlton,0,0,0
+7,283,116,10,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,369,76,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,969,85,5,amsterdam,12,spanish,0,38470,Accar Hotels,Ibas,1,0,0
+7,660,175,8,amsterdam,12,spanish,0,38470,Chillton Worldwide,Tripletree,0,0,0
+7,960,337,14,amsterdam,12,spanish,0,38470,Chillton Worldwide,Chill Garden Inn,0,0,0
+7,821,111,9,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,214,239,9,amsterdam,12,spanish,0,38470,Chillton Worldwide,Quadrupletree,0,1,0
+7,140,154,5,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,0,0,0
+7,211,150,0,amsterdam,12,spanish,0,38470,Morriott International,CourtYord,1,0,0
+7,680,153,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,743,169,12,amsterdam,12,spanish,0,38470,Morriott International,CourtYord,1,1,0
+7,945,182,10,amsterdam,12,spanish,0,38470,Chillton Worldwide,Tripletree,0,0,0
+7,783,101,0,amsterdam,12,spanish,0,38470,Yin Yang,8 Premium,1,0,0
+7,271,83,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,311,104,19,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,352,101,30,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,146,215,15,amsterdam,12,spanish,0,38470,Chillton Worldwide,Quadrupletree,0,0,0
+7,933,153,0,amsterdam,12,spanish,0,38470,Boss Western,J.Halliday Inn,1,0,0
+7,317,199,17,amsterdam,12,spanish,0,38470,Accar Hotels,Marcure,0,0,0
+7,86,113,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,762,177,12,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,1,1,0
+7,587,154,0,amsterdam,12,spanish,0,38470,Boss Western,J.Halliday Inn,0,0,0
+7,835,104,34,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,493,178,6,amsterdam,12,spanish,0,38470,Chillton Worldwide,Tripletree,0,0,0
+7,88,133,2,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,0,0,0
+7,264,81,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,9,86,0,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,548,232,38,amsterdam,12,spanish,0,38470,Morriott International,Corlton,0,1,0
+7,22,177,7,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,1,0,0
+7,581,151,6,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,117,76,5,amsterdam,12,spanish,0,38470,Yin Yang,8 Premium,1,0,0
+7,223,153,0,amsterdam,12,spanish,0,38470,Boss Western,J.Halliday Inn,0,0,0
+7,111,148,7,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,1,0,0
+7,777,182,8,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,0,0,0
+7,366,80,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,585,76,13,amsterdam,12,spanish,0,38470,Yin Yang,8 Premium,0,0,0
+7,745,105,9,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,921,93,12,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,778,110,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,375,107,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,878,110,12,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,628,153,8,amsterdam,12,spanish,0,38470,Boss Western,J.Halliday Inn,0,0,0
+7,218,237,9,amsterdam,12,spanish,0,38470,Yin Yang,Royal Lotus,0,0,1
+7,157,301,22,amsterdam,12,spanish,0,38470,Morriott International,Corlton,0,0,0
+7,103,183,31,amsterdam,12,spanish,0,38470,Yin Yang,Royal Lotus,1,1,0
+7,591,319,20,amsterdam,12,spanish,0,38470,Accar Hotels,Safitel,0,0,0
+7,212,239,9,amsterdam,12,spanish,0,38470,Yin Yang,Royal Lotus,0,1,0
+7,82,110,8,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,45,178,5,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,0,0,0
+7,430,160,28,amsterdam,12,spanish,0,38470,Yin Yang,Royal Lotus,0,0,0
+7,594,278,23,amsterdam,12,spanish,0,38470,Chillton Worldwide,Chill Garden Inn,0,1,0
+7,604,131,9,amsterdam,12,spanish,0,38470,Accar Hotels,Navatel,1,0,0
+7,517,117,11,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,1,0,0
+7,442,194,16,amsterdam,12,spanish,0,38470,Accar Hotels,Marcure,0,0,0
+7,902,213,17,amsterdam,12,spanish,0,38470,Yin Yang,Royal Lotus,1,1,0
+7,475,107,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,346,241,13,amsterdam,12,spanish,0,38470,Chillton Worldwide,Quadrupletree,1,0,0
+7,253,321,21,amsterdam,12,spanish,0,38470,Accar Hotels,Safitel,0,1,2
+7,752,333,15,amsterdam,12,spanish,0,38470,Accar Hotels,Safitel,0,0,0
+7,925,126,5,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,1,0,0
+7,779,211,15,amsterdam,12,spanish,0,38470,Morriott International,Morriot,1,0,2
+7,724,301,21,amsterdam,12,spanish,0,38470,Morriott International,Corlton,1,0,0
+7,588,176,0,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,916,136,10,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,1,0,0
+7,373,146,6,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,1,0,0
+7,567,93,3,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,303,215,10,amsterdam,12,spanish,0,38470,Yin Yang,Royal Lotus,1,1,0
+7,196,111,0,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,234,177,8,amsterdam,12,spanish,0,38470,Boss Western,J.Halliday Inn,0,0,0
+7,482,81,0,amsterdam,12,spanish,0,38470,Accar Hotels,Ibas,1,0,0
+7,507,128,10,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,0,0,0
+7,85,128,6,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,1,0,0
+7,387,337,13,amsterdam,12,spanish,0,38470,Accar Hotels,Safitel,1,0,0
+7,429,253,31,amsterdam,12,spanish,0,38470,Chillton Worldwide,Chill Garden Inn,0,0,0
+7,557,113,0,amsterdam,12,spanish,0,38470,Accar Hotels,Navatel,0,0,0
+7,880,131,0,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,0,0,0
+7,706,128,0,amsterdam,12,spanish,0,38470,Boss Western,Boss Western,0,0,1
+7,52,177,10,amsterdam,12,spanish,0,38470,Chillton Worldwide,Tripletree,0,0,0
+7,455,178,14,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,0,0,0
+7,529,275,14,amsterdam,12,spanish,0,38470,Morriott International,Corlton,1,0,1
+7,465,332,18,amsterdam,12,spanish,0,38470,Morriott International,Corlton,1,1,0
+7,627,107,0,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,163,177,18,amsterdam,12,spanish,0,38470,Yin Yang,Royal Lotus,0,1,0
+7,83,178,12,amsterdam,12,spanish,0,38470,Yin Yang,Ardisson,0,0,0
+7,460,84,0,amsterdam,12,spanish,0,38470,Accar Hotels,Ibas,0,0,0
+7,676,89,4,amsterdam,12,spanish,0,38470,Independant,Independant,0,0,0
+7,570,109,4,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,891,124,6,amsterdam,12,spanish,0,38470,Independant,Independant,1,0,0
+7,326,290,21,amsterdam,12,spanish,0,38470,Chillton Worldwide,Chill Garden Inn,0,1,0
+7,16,180,0,amsterdam,12,spanish,0,38470,Chillton Worldwide,Tripletree,1,0,0
+7,658,180,9,amsterdam,12,spanish,0,38470,Morriott International,CourtYord,1,0,0
+7,441,215,17,amsterdam,12,spanish,0,38470,Yin Yang,Royal Lotus,0,0,0
+7,410,129,10,amsterdam,12,spanish,0,38470,Accar Hotels,Navatel,0,0,0
