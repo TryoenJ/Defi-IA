@@ -4,6 +4,7 @@ AliBaba-0,portuguese,valletta,30,1
 AliBaba-0,portuguese,valletta,30,0
 AliBaba-1,cypriot,paris,15,1
 AliBaba-2,estonian,amsterdam,2,1
+<<<<<<< HEAD
 AliBaba-3,hungarian,sofia,34,0
 AliBaba-3,hungarian,sofia,13,1
 AliBaba-3,hungarian,sofia,9,1
@@ -267,3 +268,5 @@ AliBaba-155,estonian,vilnius,14,0
 AliBaba-155,estonian,vilnius,4,1
 AliBaba-156,croatian,paris,38,1
 AliBaba-156,croatian,paris,18,0
+=======
+>>>>>>> cb7bf49390e2cc508120fbe445f23bc575be070c
