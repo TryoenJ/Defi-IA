@@ -420,7 +420,6 @@ order_requests,nb_requete,hotel_id,price,stock,city,date,language,mobile,avatar_
 5,1,627,105,0,amsterdam,2,estonian,1,65738,Independant,Independant,0,0,0
 5,1,214,293,1,amsterdam,2,estonian,1,65738,Chillton Worldwide,Quadrupletree,0,1,0
 5,1,967,78,0,amsterdam,2,estonian,1,65738,Independant,Independant,1,0,0
-<<<<<<< HEAD
 6,1,181,78,90,sofia,34,hungarian,0,67080,Yin Yang,Ardisson,0,0,0
 6,1,337,79,80,sofia,34,hungarian,0,67080,Chillton Worldwide,Tripletree,0,0,0
 6,1,145,77,82,sofia,34,hungarian,0,67080,Morriott International,CourtYord,0,0,0
@@ -29372,5 +29371,3 @@ order_requests,nb_requete,hotel_id,price,stock,city,date,language,mobile,avatar_
 268,2,937,212,20,paris,18,croatian,0,67233,Yin Yang,Royal Lotus,0,0,0
 268,2,599,105,39,paris,18,croatian,0,67233,Independant,Independant,0,0,0
 268,2,841,89,9,paris,18,croatian,0,67233,Independant,Independant,0,0,0
-=======
->>>>>>> cb7bf49390e2cc508120fbe445f23bc575be070c
