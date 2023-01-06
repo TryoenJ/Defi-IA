@@ -22,7 +22,7 @@ from joblib import dump, load
 
 if __name__ == '__main__':
     print("***************")
-    print("*** model.py ***")
+    print("*** train.py ***")
     
     path = './data/'
     
@@ -76,7 +76,7 @@ if __name__ == '__main__':
     
     if ansP == 'n':
         print("*** no GridSearch ***")
-        print("*** XGBRegressor avec n_estimators=3000 et max_depth=10 ***")
+        print("*** XGBRegressor with n_estimators=3000 and max_depth=10 ***")
         print("*** model training ***")
         
         pip = Pipeline(steps=[("Cat_encoder", Categorical_transformer),
@@ -132,14 +132,14 @@ if __name__ == '__main__':
     plt.plot(y_hat,y_test,"o")
     plt.xlabel(u"predict prices")
     plt.ylabel(u"observed prices")
-    plt.show()
+    plt.show(block=False)
     #plt.savefig('./results_store/ytest-vs-yhat.png')
     
     plt.plot(y_hat,y_test-y_hat,"o")
     plt.xlabel(u"predict prices")
     plt.ylabel(u"residuals")
     plt.hlines(0,0,500)
-    plt.show()
+    plt.show(block=False)
     #plt.savefig('./results_store/residuals-vs-ytest.png')
         
     print("*** RMSE + R2 ***")
@@ -183,4 +183,4 @@ if __name__ == '__main__':
         Ysub=Yindice.join(Yprice, on=None, how='right', lsuffix='', rsuffix='', sort=False)
         Ysub.to_csv('./results_store/submissionXGB.csv', index= False)
 
-    print("*** end model.py ***")
+    print("*** end train.py ***")
