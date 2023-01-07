@@ -8,5 +8,5 @@ Commands to run for training our model or launching the gradio application, from
 5. Build the Docker image using the following command: docker build -t [imagename].
 6. Start a new container based on the image: docker run -it [imagename] /bin/bash
 This will start a new container based on the imagename image, and open a command shell within the container.
-7. To train the model, use the command : python /GIT-FINAL/model.py
-   To launch the gradio application, you can write on the command shell : python /GIT-FINAL/app.py
+7. To train the model, use the command : python /GIT-Final/model.py
+   To launch the gradio application, you can write on the command shell : python /GIT-Final/app.py
