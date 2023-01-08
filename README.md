@@ -7,8 +7,8 @@ The aim of the project is to accurately predict the price of a hotel room for a 
 
 To explain our work for this project, you will find different scripts: <br /> 
       - *train.py* : This script is used to train an XGBoost model using either OneHotEncoder or TargetEncoder for categorical encoding. The model can be fine-tuned using GridSearch or trained with pre-selected parameters that give satisfactory results without excessive training time. <br /> 
-      - *app.py* : A gradio application, that gives an estimation of the price you should pay considering the input parameter the user choose. The prediction is done with our best model (XGBoost and TargetEncoding).<br /> 
-      - *MSE.py* : A first analyse of the errors, with the Mean Square Error. <br /> 
+      - *app.py* : A gradio application, that gives an estimation of the price you should pay considering the input parameters the user choose. The prediction is done with our best model (XGBoost and TargetEncoding).<br /> 
+      - *MSE.py* : A first analyse of errors, with the Mean Square Error. <br /> 
       - *analysis.ipynb* :  The interpretability of the model<br /> 
       
 ## How to set up the project
