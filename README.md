@@ -24,7 +24,20 @@ To use the scripts for training the model or launching the gradio application fr
 7. Navigate in the container in the directory :
 **cd workspace/[folder_name_in_the_container]** <br />
 8. Download the model: <br />
-**wget --no-check-certificate 'https://drive.google.com/file/d/1xGZ6AUsLssx2ka8jQDuUY-webCxK5Xad/view?usp=share_link' -O XGB_Target_model_saved.joblib** <br />
+
+option 1 (Lauriane link): <br />
+**wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1NKbJqeZBIKEukFCsMITM0-L4wEN14wvZ' -O XGB_Target_model_saved.joblib** <br />
+
+option 2 (Julie link): <br />
+wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1xGZ6AUsLssx2ka8jQDuUY-webCxK5Xad' -O XGB_Target_model_saved.joblib  <br />
+
+option 3 avec curl (marche pas non plus): <br />
+curl -L -o XGB_Target_model_saved.joblib https://drive.google.com/uc?export=download&id=1NKbJqeZBIKEukFCsMITM0-L4wEN14wvZ  <br />
+option 4 faire tourner train.py, save the model, et faire tourner app.py avec ca: <br />
+
 
 8. Train the model with: **python train.py** <br /> 
    Launch the gradio application with: **python app.py**
+   
+## Results
+MSE, score ...
