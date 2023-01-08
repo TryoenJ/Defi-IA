@@ -1,5 +1,18 @@
-# Defi-IA
-Commands to run for training our model or launching the gradio application, from a Docker container:
+# Defi-IA : 1001 nights
+Please consider the final codes and files that are in **GIT-Final** folder.
+## Overview of the project 
+This project is for the kaggle competition (https://www.kaggle.com/competitions/defi-ia-2023).  <br /> 
+The aim of the project is to accurately predict the price of a hotel room for a given night, taking into account various factors such as the location of the hotel, the language spoken by the person requesting the room, or the date of the request.
+
+
+To explain our work for this project, you will find different scripts: <br /> 
+      - *train.py* : This script is used to train an XGBoost model using either OneHotEncoder or TargetEncoder for categorical encoding. The model can be fine-tuned using GridSearch or trained with pre-selected parameters that give satisfactory results without excessive training time. <br /> 
+      - *app.py* : A gradio application, that gives an estimation of the price you should pay considering the input parameter the user choose. The prediction is done with our best model (XGBoost and TargetEncoding).<br /> 
+      - *MSE.py* : A first analyse of the errors, with the Mean Square Error. <br /> 
+      - *analysis.ipynb* :  The interpretability of the model<br /> 
+      
+## How to set up the project
+To use the scripts for training the model or launching the gradio application from within a Docker container, follow these steps:
 
 1. Install Docker on your machine if it is not already installed. You can find installation instructions for Docker at https://docs.docker.com/get-docker/.
 2. Open a terminal or command prompt and navigate to the directory where you want to clone the repository.
