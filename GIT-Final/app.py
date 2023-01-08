@@ -4,7 +4,7 @@ import joblib
 import datasets
 import numpy as np
 
-model = joblib.load('./XGB_model_saved.joblib')
+model = joblib.load('./XGB_Target_model_saved.joblib')
 
 in1 = gr.inputs.Slider(minimum=0, maximum=44, step=1)#date
 in2 = gr.inputs.Slider(minimum=1, maximum=100, step=1) #stock
