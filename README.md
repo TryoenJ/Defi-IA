@@ -6,10 +6,10 @@ The aim of the project is to accurately predict the price of a hotel room for a 
 
 
 To explain our work for this project, you will find different scripts: <br /> 
-      - *train.py* : This script is used to train an XGBoost model using either OneHotEncoder or TargetEncoder for categorical encoding. The model can be fine-tuned using GridSearch or trained with pre-selected parameters that give satisfactory results without excessive training time. <br /> 
-      - *app.py* : A gradio application, that gives an estimation of the price you should pay considering the input parameters the user choose. The prediction is done with our best model (XGBoost and TargetEncoding).<br /> 
-      - *MSE.py* : A first analyse of errors, with the Mean Square Error. <br /> 
-      - *analysis.ipynb* :  The interpretability of the model<br /> 
+      - *train.py* : This script is used to train a XGBoost model using either OneHotEncoder or TargetEncoder for categorical encoding. The model can be fine-tuned using GridSearch or trained with pre-selected best parameters obtained by GridSearch A REFORMULER ?(that give satisfactory results without excessive training time). <br /> 
+      - *app.py* : A gradio application, that gives an estimation of the price you should pay considering the following input parameters the user choose : A COMPLETER The prediction is done with our best ? model (XGBoost and TargetEncoding) BEST = XGBoost + OneHot .<br />
+      - *analysis.ipynb* :  An analysis of our data set and an interpretability of the model <br /> 
+      - *MSE.ipynb* : (TO ADD) An analysis of errors as a function of inputs, using the Mean Square Error <br /> 
       
 ## How to set up the project
 To use the scripts for training the model or launching the gradio application from within a Docker container, follow these steps:
@@ -35,9 +35,8 @@ option 3 avec curl (marche pas non plus): <br />
 curl -L -o XGB_Target_model_saved.joblib https://drive.google.com/uc?export=download&id=1NKbJqeZBIKEukFCsMITM0-L4wEN14wvZ  <br />
 option 4 faire tourner train.py, save the model, et faire tourner app.py avec ca: <br />
 
-
 8. Train the model with: **python train.py** <br /> 
-   Launch the gradio application with: **python app.py**
+9. Launch the gradio application with: **python app.py**
    
 ## Results
 MSE, score ...
