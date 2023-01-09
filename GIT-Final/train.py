@@ -12,9 +12,119 @@ from category_encoders import TargetEncoder
 from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
+from sklearn.base import BaseEstimator, TransformerMixin
+
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
 from joblib import dump, load
+
+# BAD RESULTS - NOT USED
+class TargetEncoderSmooth(BaseEstimator, TransformerMixin):
+    """Target encoder.
+    
+    Replaces categorical column(s) with the mean target value for
+    each category.
+
+    """
+    
+    def __init__(self, cols=None):
+        """Target encoder
+        
+        Parameters
+        ----------
+        cols : list of str
+            Columns to target encode.  Default is to target 
+            encode all categorical columns in the DataFrame.
+        """
+        if isinstance(cols, str):
+            self.cols = [cols]
+        else:
+            self.cols = cols
+        
+        
+    def fit(self, X, y):
+        """Fit target encoder to X and y
+        
+        Parameters
+        ----------
+        X : pandas DataFrame, shape [n_samples, n_columns]
+            DataFrame containing columns to encode
+        y : pandas Series, shape = [n_samples]
+            Target values.
+            
+        Returns
+        -------
+        self : encoder
+            Returns self.
+        """
+        
+        # Encode all categorical cols by default
+        if self.cols is None:
+            self.cols = [col for col in X 
+                         if str(X[col].dtype)=='category']
+
+        # Check columns are in X
+        for col in self.cols:
+            if col not in X:
+                raise ValueError('Column \''+col+'\' not in X')
+
+        # Compute the global mean
+        mean = y.mean()
+
+        # Encode each element of each column
+        self.maps = dict() #dict to store map for each column
+        for col in self.cols:
+            tmap = dict()
+            uniques = X[col].unique()
+            for unique in uniques:
+                #tmap[unique] = y[X[col]==unique].mean()
+                counts = y[X[col]==unique].count()
+                means = y[X[col]==unique].mean()
+                tmap[unique] = (counts * means + 10 * mean)/(counts + 10)
+            self.maps[col] = tmap
+            
+        return self
+
+        
+    def transform(self, X, y=None):
+        """Perform the target encoding transformation.
+        
+        Parameters
+        ----------
+        X : pandas DataFrame, shape [n_samples, n_columns]
+            DataFrame containing columns to encode
+            
+        Returns
+        -------
+        pandas DataFrame
+            Input DataFrame with transformed columns
+        """
+        Xo = X.copy()
+        for col, tmap in self.maps.items():
+            vals = np.full(X.shape[0], np.nan)
+            for val, mean_target in tmap.items():
+                vals[X[col]==val] = mean_target
+            Xo[col] = vals
+        return Xo
+            
+            
+    def fit_transform(self, X, y=None):
+        """Fit and transform the data via target encoding.
+        
+        Parameters
+        ----------
+        X : pandas DataFrame, shape [n_samples, n_columns]
+            DataFrame containing columns to encode
+        y : pandas Series, shape = [n_samples]
+            Target values (required!).
+
+        Returns
+        -------
+        pandas DataFrame
+            Input DataFrame with transformed columns
+        """
+        return self.fit(X, y).transform(X, y)
+
 
 #########################
 #    MAIN PROGRAM
@@ -72,6 +182,7 @@ if __name__ == '__main__':
         ansP = input("* Do we use GridSearch for XGBoost? (type y or n)")
     else : 
         Categorical_transformer = TargetEncoder()
+        #Categorical_transformer = TargetEncoderSmooth()
         ansP = input("* Do we use GridSearch for XGBoost? for Target? no GridSearch (type yX or yT or n)")
     
     if ansP == 'n':
@@ -110,7 +221,7 @@ if __name__ == '__main__':
                  
             param_grid = {
                 "Cat_encoder__min_samples_leaf":[1,10,20],
-                "Boosting__smoothing": [0.2,1.,10.],
+                "Cat_encoder__smoothing": [0.2,1.,10.],
                 }
             
         grid_search = GridSearchCV(pip, param_grid, cv=5, n_jobs=-1)
