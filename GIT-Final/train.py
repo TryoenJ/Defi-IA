@@ -177,7 +177,7 @@ if __name__ == '__main__':
     
     # PIPELINE
     print("   ")
-    print("*** model ***")
+    print("*** model with " + ansI + " inputs ***")
     ansC = input("* Do we use OneHotEncoder or Classical TargetEncoder or Smooth TargetEncoder ? (type O or CT or ST)")
     if ansC=='O':
         Categorical_transformer = OneHotEncoder()
