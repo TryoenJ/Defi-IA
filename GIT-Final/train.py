@@ -269,7 +269,7 @@ if __name__ == '__main__':
     plt.ylabel(u"residuals")
     plt.hlines(0,0,500)
     #plt.show(block=False)
-    plt.savefig('./results_store/residuals-vs-ytest.png')
+    plt.savefig('./results_store/residuals-vs-yhat.png')
         
     print("*** RMSE + R2 ***")
     print("RMSE=",mean_squared_error(y_test, y_hat, squared=False))  
@@ -281,7 +281,7 @@ if __name__ == '__main__':
     if ansM=='y':
         #dump(pip, 'XGB_model_saved.joblib')
         #pickle.dump(pip, open('XGB11_Target_model_saved_Final.sav', 'wb'))
-        pickle.dump(pip, open('XGB11_Target_model_saved_Final.pkl', 'wb'))
+        pickle.dump(pip, open('XGB'+ ansI +'_Target_model_saved_Final.pkl', 'wb'))
     
     print("   ")
     print("*** predict test Defi ***")

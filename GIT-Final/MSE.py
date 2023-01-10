@@ -48,11 +48,14 @@ if __name__ == '__main__':
 
     data["price"]=pd.DataFrame(data["price"], dtype=float)
     
-    p#rint("*** model with all the inputs except nb_requete ***")
-    #X = data[["date","stock","city","language","mobile","hotel_id","group","brand","parking","pool","children_policy"]]
+    ansI = input("* Do we take the 11 inputs to build the model ? or the 7 most influent inputs ? (type 11 or 7)")
+    if ansI=='11':
+        print("*** model with all the inputs except nb_requete ***")
+        X = data[["date","stock","city","language","mobile","hotel_id","group","brand","parking","pool","children_policy"]]
+    else :
+        print("*** model with the 7 most influent inputs ***")
+        X = data[["date","stock","city","language","hotel_id","group","brand"]]
     
-    print("*** model with the 7 most influent inputs ***")
-    X = data[["date","stock","city","language","hotel_id","group","brand"]]
     Y = data[["price"]]
     
     # PIPELINE
@@ -99,10 +102,12 @@ if __name__ == '__main__':
         arrayErreur[b,:]=Vect_erreur[b,:,0]
     
     dataframeErreur = pd.DataFrame(arrayErreur)
+    
+    plt.figure(1)
     plt.figure(figsize=(13,7))
     dataframeErreur.boxplot()
     #plt.show(block=False)
-    plt.savefig('./results_store/MSE-BP-date.png')
+    plt.savefig('./results_store/XGB'+ ansI + '_MSE-BP-date.png')
 
 
     print("*** MSE en fonction de la ville pour B folds ***")
@@ -136,10 +141,12 @@ if __name__ == '__main__':
         arrayErreur[b,:]=Vect_erreur[b,:,0]
     
     dataframeErreur = pd.DataFrame(arrayErreur,columns=['amsterdam', 'copenhagen', 'madrid', 'paris', 'rome', 'sofia', 'valletta', 'vienna', 'vilnius'])
+    
+    plt.figure(2)
     plt.figure(figsize=(13,7))
     dataframeErreur[['amsterdam', 'copenhagen', 'madrid', 'paris', 'rome', 'sofia', 'valletta', 'vienna', 'vilnius']].boxplot(return_type='dict')
     #plt.show(block=False)
-    plt.savefig('./results_store/MSE-BP-city.png')
+    plt.savefig('./results_store/XGB'+ ansI + '_MSE-BP-city.png')
     
     
     print("*** MSE en fonction du langage pour B folds ***")
@@ -173,11 +180,13 @@ if __name__ == '__main__':
         dataframeErreur = pd.DataFrame(arrayErreur,columns=['austrian', 'belgian', 'bulgarian', 'croatian', 'cypriot', 'czech', 'danish', 'dutch', 'estonian', 'finnish',
             'french', 'german', 'greek', 'hungarian', 'irish', 'italian', 'latvian', 'lithuanian', 'luxembourgish', 
             'maltese', 'polish', 'portuguese', 'romanian', 'slovakian', 'slovene', 'spanish','swedish'])
+        
+        plt.figure(3)
         plt.figure(figsize=(13,7))
         dataframeErreur[['austrian', 'belgian', 'bulgarian', 'croatian', 'cypriot', 'czech', 'danish', 'dutch', 'estonian', 'finnish',
             'french', 'german', 'greek', 'hungarian', 'irish', 'italian', 'latvian', 'lithuanian', 'luxembourgish', 
             'maltese', 'polish', 'portuguese', 'romanian', 'slovakian', 'slovene', 'spanish','swedish']].boxplot(return_type='dict')
         #plt.show(block=False)
-        plt.savefig('./results_store/MSE-BP-langage.png')
+        plt.savefig('./results_store/XGB'+ ansI + '_MSE-BP-langage.png')
         
     print("*** end MSE.py ***")
