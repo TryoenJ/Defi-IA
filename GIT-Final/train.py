@@ -16,7 +16,11 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
+
 from joblib import dump, load
+
+import pickle
+#import booster
 
 class TargetEncoderSmooth(BaseEstimator, TransformerMixin):
     """Target encoder.
@@ -184,7 +188,7 @@ if __name__ == '__main__':
             Categorical_transformer = TargetEncoder()
             print("*** XGBRegressor with Classical TargetEncoder ***")
         else :
-            ansC=='ST':
+            ansC=='ST'
             Categorical_transformer = TargetEncoderSmooth()
             print("*** XGBRegressor with Smooth TargetEncoder ***")
     
@@ -275,7 +279,9 @@ if __name__ == '__main__':
     ansM = input("* Do we save the model ? (type y or n)")
     if ansM=='y':
         #dump(pip, 'XGB_model_saved.joblib')
-        booster.save_model(pip, '/content/gdrive/My Drive/Defi-IA/XGB11_Target_model_saved_Final.json')
+        #booster.save_model(pip, '/content/gdrive/My Drive/Defi-IA/XGB11_Target_model_saved_Final.json')
+        pickle.dump(pip, open('XGB11_Target_model_saved_Final.sav', 'wb'))
+        pickle.dump(pip, open('XGB11_Target_model_saved_Final.pkl', 'wb'))
     
     print("   ")
     print("*** predict test Defi ***")
