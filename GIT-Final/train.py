@@ -18,7 +18,6 @@ from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
 from joblib import dump, load
 
-# BAD RESULTS - NOT USED
 class TargetEncoderSmooth(BaseEstimator, TransformerMixin):
     """Target encoder.
     
@@ -176,16 +175,23 @@ if __name__ == '__main__':
     # PIPELINE
     print("   ")
     print("*** model ***")
-    ansC = input("* Do we use OneHotEncoder or TargetEncoder ? (type O or T)")
+    ansC = input("* Do we use OneHotEncoder or Classical TargetEncoder or Smooth TargetEncoder ? (type O or CT or ST)")
     if ansC=='O':
         Categorical_transformer = OneHotEncoder()
-        ansP = input("* Do we use GridSearch for XGBoost? (type y or n)")
+        print("*** XGBRegressor with OneHotEncoder ***")
     else : 
-        Categorical_transformer = TargetEncoder()
-        #Categorical_transformer = TargetEncoderSmooth()
-        ansP = input("* Do we use GridSearch for XGBoost? for Target? no GridSearch (type yX or yT or n)")
+        if ansC=='CT':
+            Categorical_transformer = TargetEncoder()
+            print("*** XGBRegressor with Classical TargetEncoder ***")
+        else :
+            ansC=='ST':
+            Categorical_transformer = TargetEncoderSmooth()
+            print("*** XGBRegressor with Smooth TargetEncoder ***")
     
-    if ansP == 'n':
+    ansP = input("* Do we use no GridSearch, GridSearch for XGB, GridSearch for Classical TargetEncoder? (type NG or XG or TG)")
+    
+    if ansP == 'NG':
+            
         print("*** no GridSearch ***")
         print("*** XGBRegressor with n_estimators=3000 and max_depth=10 ***")
         print("*** model training ***")
@@ -200,25 +206,32 @@ if __name__ == '__main__':
     
     else :
         
-        pip = Pipeline(steps=[("Cat_encoder", Categorical_transformer),
+        if ansP == 'XG':
+        
+            print("*** GridSearch for XGBoost ***")
+            print("*** model training ***")
+            
+            pip = Pipeline(steps=[("Cat_encoder", Categorical_transformer),
                       ("Standard_scaler", StandardScaler()),
                       ("Boosting", XGBRegressor()),
                       ]
                )
         
-        if ansP == 'yX':
-            print("*** GridSearch for XGBoost ***")
-            print("*** model training ***")
-            
             param_grid = {
                 "Boosting__n_estimators":[1000, 3000, 5000],
                 "Boosting__max_depth": [7, 10, 13],
                 }
              
         else :
-            print("*** GridSearch for Target ***")
+            print("*** GridSearch for Classical Target ***")
             print("*** model training ***")
-                 
+            
+            pip = Pipeline(steps=[("Cat_encoder", Categorical_transformer),
+                      ("Standard_scaler", StandardScaler()),
+                      ("Boosting", XGBRegressor(n_estimators=3000,max_depth=10)),
+                      ]
+               )
+            
             param_grid = {
                 "Cat_encoder__min_samples_leaf":[1,10,20],
                 "Cat_encoder__smoothing": [0.2,1.,10.],
