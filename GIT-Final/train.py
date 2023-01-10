@@ -274,7 +274,8 @@ if __name__ == '__main__':
     print("*** save ***")
     ansM = input("* Do we save the model ? (type y or n)")
     if ansM=='y':
-        dump(pip, 'XGB_model_saved.joblib')
+        #dump(pip, 'XGB_model_saved.joblib')
+        booster.save_model(pip, '/content/gdrive/My Drive/Defi-IA/XGB11_Target_model_saved_Final.json')
     
     print("   ")
     print("*** predict test Defi ***")
