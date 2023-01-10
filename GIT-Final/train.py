@@ -20,7 +20,6 @@ from sklearn.metrics import r2_score
 from joblib import dump, load
 
 import pickle
-#import booster
 
 class TargetEncoderSmooth(BaseEstimator, TransformerMixin):
     """Target encoder.
@@ -257,12 +256,14 @@ if __name__ == '__main__':
     print("*** plots ***")
     y_hat = pip.predict(X_test)
 
+    plt.figure(1)
     plt.plot(y_hat,y_test,"o")
     plt.xlabel(u"predict prices")
     plt.ylabel(u"observed prices")
     #plt.show(block=False)
     plt.savefig('./results_store/ytest-vs-yhat.png')
     
+    plt.figure(2)
     plt.plot(y_hat,y_test-y_hat,"o")
     plt.xlabel(u"predict prices")
     plt.ylabel(u"residuals")
@@ -279,8 +280,7 @@ if __name__ == '__main__':
     ansM = input("* Do we save the model ? (type y or n)")
     if ansM=='y':
         #dump(pip, 'XGB_model_saved.joblib')
-        #booster.save_model(pip, '/content/gdrive/My Drive/Defi-IA/XGB11_Target_model_saved_Final.json')
-        pickle.dump(pip, open('XGB11_Target_model_saved_Final.sav', 'wb'))
+        #pickle.dump(pip, open('XGB11_Target_model_saved_Final.sav', 'wb'))
         pickle.dump(pip, open('XGB11_Target_model_saved_Final.pkl', 'wb'))
     
     print("   ")
