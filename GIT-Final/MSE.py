@@ -48,8 +48,11 @@ if __name__ == '__main__':
 
     data["price"]=pd.DataFrame(data["price"], dtype=float)
     
-    print("*** model with all the inputs except nb_requete ***")
-    X = data[["date","stock","city","language","mobile","hotel_id","group","brand","parking","pool","children_policy"]]
+    p#rint("*** model with all the inputs except nb_requete ***")
+    #X = data[["date","stock","city","language","mobile","hotel_id","group","brand","parking","pool","children_policy"]]
+    
+    print("*** model with the 7 most influent inputs ***")
+    X = data[["date","stock","city","language","hotel_id","group","brand"]]
     Y = data[["price"]]
     
     # PIPELINE
@@ -98,8 +101,8 @@ if __name__ == '__main__':
     dataframeErreur = pd.DataFrame(arrayErreur)
     plt.figure(figsize=(13,7))
     dataframeErreur.boxplot()
-    plt.show(block=False)
-    #plt.savefig('./results_store/MSE-BP-date.png')
+    #plt.show(block=False)
+    plt.savefig('./results_store/MSE-BP-date.png')
 
 
     print("*** MSE en fonction de la ville pour B folds ***")
@@ -135,8 +138,8 @@ if __name__ == '__main__':
     dataframeErreur = pd.DataFrame(arrayErreur,columns=['amsterdam', 'copenhagen', 'madrid', 'paris', 'rome', 'sofia', 'valletta', 'vienna', 'vilnius'])
     plt.figure(figsize=(13,7))
     dataframeErreur[['amsterdam', 'copenhagen', 'madrid', 'paris', 'rome', 'sofia', 'valletta', 'vienna', 'vilnius']].boxplot(return_type='dict')
-    plt.show(block=False)
-    #plt.savefig('./results_store/MSE-BP-city.png')
+    #plt.show(block=False)
+    plt.savefig('./results_store/MSE-BP-city.png')
     
     
     print("*** MSE en fonction du langage pour B folds ***")
@@ -174,7 +177,7 @@ if __name__ == '__main__':
         dataframeErreur[['austrian', 'belgian', 'bulgarian', 'croatian', 'cypriot', 'czech', 'danish', 'dutch', 'estonian', 'finnish',
             'french', 'german', 'greek', 'hungarian', 'irish', 'italian', 'latvian', 'lithuanian', 'luxembourgish', 
             'maltese', 'polish', 'portuguese', 'romanian', 'slovakian', 'slovene', 'spanish','swedish']].boxplot(return_type='dict')
-        plt.show(block=False)
-        #plt.savefig('./results_store/MSE-BP-langage.png')
+        #plt.show(block=False)
+        plt.savefig('./results_store/MSE-BP-langage.png')
         
     print("*** end MSE.py ***")
