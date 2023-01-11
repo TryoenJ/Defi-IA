@@ -7,7 +7,6 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-#model = pickle.load(open('C:/Users/PC/Documents/5A/IAF/Defi-IA/essaicontainer/Defi-IA/GIT-Final/XGB11_Target_model_saved_Final.pkl','rb'))
 model = pickle.load(open('./XGB11_Target_model_saved_Final.pkl','rb'))
 
 in1 = gr.inputs.Slider(minimum=0, maximum=44, step=1)#date
@@ -32,7 +31,6 @@ def infer(date,stock,language,mobile,hotel_id):
   input_dataframe.columns = ["date","stock","language","mobile","hotel_id"] 
 
   #ajout des features_hotels
-  #hotels = pd.read_csv('C:/Users/PC/Documents/5A/IAF/Defi-IA/essaicontainer/Defi-IA/GIT-Final/data/features_hotels.csv', index_col=['hotel_id', 'city'])
   #hotels = pd.read_csv('./data/features_hotels.csv', index_col=['hotel_id', 'city'])
   #input_complete = input_dataframe.join(hotels, on=['hotel_id', 'city'])
   hotels = pd.read_csv('./data/features_hotels.csv', index_col=['hotel_id'])
@@ -56,7 +54,7 @@ def infer(date,stock,language,mobile,hotel_id):
   input_complete = input_complete[["date","stock","city","language","mobile","hotel_id","group","brand","parking","pool","children_policy"]]
   
   return "You, as a/an "+str(language)+" speaker, chose to spend a night in hotel "+ str(hotel_id)+ " situated in "+str(input_complete["city"][0])+" in "+str(date)+" day(s). You supposed that "+str(input_complete["stock"][0])+ " rooms are still available. We estimate the price of your night at : " + str(np.around(model.predict(input_complete)[0], decimals=2))+ " €"
-infer(10,10,'french',0,1)
+#infer(10,10,'french',0,1)
 
 I = gr.Interface(fn = infer, inputs = inputs, outputs = "text")
 I.launch(share=True)
