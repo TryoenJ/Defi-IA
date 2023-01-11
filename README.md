@@ -57,7 +57,7 @@ XGB with Target Encoding seems to be better than with OneHot Encoding on our dat
 
 Below are different RMSE and R2 quantities for different models, as well as the computational time. Training with OneHot Encoding is faster in our case. It seems strange because OneHot Encoding implies more input parameters. The Target Encoder used is probably not optimal.  <br />
 
-Retaining only the 7 most influent inputs for the model training is a bit faster but at the cost of an additive error, especially for dates near zero (see MSE Boxplots). <br />
+Retaining only the 7 most influent inputs for the model training is a bit faster but at the cost of an additive error, especially for dates near zero (see MSE Boxplots). We could have asked for more requests with little dates if we had more time. <br />
 
 * XGB OneHot 11 inputs <br />
 computational time: 1685 seconds <br />
