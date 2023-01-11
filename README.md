@@ -49,16 +49,15 @@ We trained the model for all inputs except nb_requetes and for the 11 or 7 most 
 XGB with Target Encoding seems to be better than with OneHot Encoding on our dataset (cf. R2 score and RMSE). However OneHot Encoding did best on the Defi dataset.
 Below are different RMSE and R2 quantities for different models, as well as the computational time. Training with OneHot Encoding is faster in our case. It seems strange because OneHot implies more input parameters. Maybe the Target Encoder used is not optimal.  <br /> 
 
+XGB O 11 inputs <br />
+computational time: 1684.8117138859998 seconds <br />
+RMSE= 1.1037918535446147 <br />
+R2= 0.9998252899341307 <br />
 
-XGB ST 10 11 inputs  <br /> 
-computational time: 1929.749336924 seconds  <br /> 
-RMSE= 1.009604442730685  <br /> 
-R2= 0.9998538341001686  <br /> 
-
-XGB ST 100 11 inputs <br />
-computational time: 2031.43531729 seconds <br />
-RMSE= 1.011972724617658 <br />
-R2= 0.9998531475579079 <br />
+XGB O 7 inputs <br />
+computational time: 1515.5348852549996 seconds <br />
+RMSE= 1.574096452379345 <br />
+R2= 0.9996446909750896 <br />
 
 XGB CT 11 inputs <br />
 computational time: 2147.9229499629996 seconds <br />
@@ -70,12 +69,12 @@ computational time: 1652.349551716 seconds <br />
 RMSE= 1.533388621745516 <br />
 R2= 0.9996628306946584 <br />
 
-XGB O 11 inputs <br />
-computational time: 1684.8117138859998 seconds <br />
-RMSE= 1.1037918535446147 <br />
-R2= 0.9998252899341307 <br />
+XGB ST 10 11 inputs  <br /> 
+computational time: 1929.749336924 seconds  <br /> 
+RMSE= 1.009604442730685  <br /> 
+R2= 0.9998538341001686  <br /> 
 
-XGB O 7 inputs <br />
-computational time: 1515.5348852549996 seconds <br />
-RMSE= 1.574096452379345 <br />
-R2= 0.9996446909750896 <br />
+XGB ST 100 11 inputs <br />
+computational time: 2031.43531729 seconds <br />
+RMSE= 1.011972724617658 <br />
+R2= 0.9998531475579079 <br />
