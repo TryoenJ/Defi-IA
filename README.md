@@ -56,31 +56,31 @@ XGB with Target Encoding seems to be better than with OneHot Encoding on our dat
 Below are different RMSE and R2 quantities for different models, as well as the computational time. Training with OneHot Encoding is faster in our case. It seems strange because OneHot implies more input parameters. Maybe the Target Encoder used is not optimal.  <br /> 
 
 * XGB O 11 inputs <br />
-computational time: 1684.8117138859998 seconds <br />
-RMSE= 1.1037918535446147 <br />
-R2= 0.9998252899341307 <br />
+computational time: 1685 seconds <br />
+RMSE= 1.10379 <br />
+R2= 0.99983 <br />
 
 * XGB O 7 inputs <br />
-computational time: 1515.5348852549996 seconds <br />
-RMSE= 1.574096452379345 <br />
-R2= 0.9996446909750896 <br />
+computational time: 1516 seconds <br />
+RMSE= 1.57410 <br />
+R2= 0.99964 <br />
 
 * XGB CT 11 inputs <br />
-computational time: 2147.9229499629996 seconds <br />
-RMSE= 1.0491885291687986 <br />
-R2= 0.999842147804718 <br />
+computational time: 2148 seconds <br />
+RMSE= 1.04919 <br />
+R2= 0.99984 <br />
 
 * XGB CT 7 inputs <br />
-computational time: 1652.349551716 seconds <br />
-RMSE= 1.533388621745516 <br />
-R2= 0.9996628306946584 <br />
+computational time: 1652 seconds <br />
+RMSE= 1.53339 <br />
+R2= 0.99966 <br />
 
 * XGB ST 10 11 inputs  <br /> 
-computational time: 1929.749336924 seconds  <br /> 
-RMSE= 1.009604442730685  <br /> 
-R2= 0.9998538341001686  <br /> 
+computational time: 1930 seconds  <br /> 
+RMSE= 1.00960  <br /> 
+R2= 0.99985  <br /> 
 
 * XGB ST 100 11 inputs <br />
-computational time: 2031.43531729 seconds <br />
-RMSE= 1.011972724617658 <br />
-R2= 0.9998531475579079 <br />
+computational time: 2031 seconds <br />
+RMSE= 1.01197 <br />
+R2= 0.99985 <br />
