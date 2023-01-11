@@ -5,13 +5,19 @@ This project is for the kaggle competition (https://www.kaggle.com/competitions/
 The aim of the project is to accurately predict the price of a hotel room for a given night, taking into account various factors such as the location of the hotel, the language spoken by the person requesting the room, or the date of the request.
 
 
-To explain our work for this project, you will find different scripts: <br /> 
+To explain our work for this project, you will find different scripts: <br />
+
       - *train.py* : This script is used to train a XGBoost model using either OneHotEncoder or Classical TargetEncoder or Smooth TargetEncoder for categorical encoding and provides the computational time of the process. TargetEncoder function of category_encoders was used for Classical Target Encoding, where two parameters (min_samples_leaf and smoothing) can be tuned to add smoothing. A TargetEncoderSmooth class was written for TargetEncoder with smoothing weight=10, based on Max Halford idea.
-The model can be fine-tuned using GridSearch or trained with pre-selected best parameters obtained with GridSearch. Two plots are generated in ./results_store directory, which represent respectively observed prices versus predicted prices and residuals versus predicted prices. <br /> 
+The model can be fine-tuned using GridSearch or trained with pre-selected best parameters obtained with GridSearch. Two plots are generated in ./results_store directory, which represent respectively observed prices versus predicted prices and residuals versus predicted prices. <br />
+
       - *app.py* : A gradio application, that gives an estimation of the price you should pay considering the following input parameters the user chooses : date, stock, language, hotel_id, mobile. The prediction is done with our Classical Target Encoding XGBoost model with 11 input features. <br />
-      - *analysis.ipynb* :  A notebook containing an analysis of our dataset and an interpretability of the model <br /> 
-      - *MSE-11.ipynb* : A notebook containing an analysis of Mean Square Errors as a function of some input features, with a Target Encoding XGBoost model with 11 input features, illustrated with boxplots for K folds <br /> 
-      - *MSE-7.ipynb* : A notebook containing an analysis of Mean Square Errors as a function of some input features, with a Target Encoding XGBoost model with 7 input features, illustrated with boxplots for K folds <br /> 
+      
+      - *analysis.ipynb* :  A notebook containing an analysis of our dataset and an interpretability of the model <br />
+      
+      - *MSE-11.ipynb* : A notebook containing an analysis of Mean Square Errors as a function of some input features, with a Target Encoding XGBoost model with 11 input features, illustrated with boxplots for K folds <br />
+      
+      - *MSE-7.ipynb* : A notebook containing an analysis of Mean Square Errors as a function of some input features, with a Target Encoding XGBoost model with 7 input features, illustrated with boxplots for K folds <br />
+      
       - *MSE.py* : Same as above with python. Number of features to be chosen. Plots are saved in ./results_store directory. <br /> 
       
 ## How to set up the project
