@@ -7,7 +7,8 @@ The aim of the project is to accurately predict the price of a hotel room for a 
 
 Different scripts compose this project : <br />
 
-* *train.py* : This script is used to train a XGBoost model using either OneHotEncoder or Classical TargetEncoder or Smooth TargetEncoder for categorical encoding and provides the computational time of the process. TargetEncoder function of category_encoders was used for Classical Target Encoding, where two parameters (min_samples_leaf and smoothing) can be tuned to add smoothing. A TargetEncoderSmooth class was written for TargetEncoder with smoothing weight=10, based on Max Halford idea.
+* *train.py* : This script is used to train a XGBoost model using either OneHotEncoder or Classical TargetEncoder or Smooth TargetEncoder for categorical encoding and provides the computational time of the process.<br />
+TargetEncoder function of category_encoders was used for Classical Target Encoding, where two parameters (min_samples_leaf and smoothing) can be tuned to add smoothing. A TargetEncoderSmooth class was written for TargetEncoder with smoothing weight=10, based on Max Halford idea.<br />
 The model can be fine-tuned using GridSearch or trained with pre-selected best parameters obtained with GridSearch. Two plots are generated in ./results_store directory, which represent respectively observed prices versus predicted prices and residuals versus predicted prices. <br />
 
 * *app.py* : A gradio application, that gives an estimation of the price you should pay considering the following input parameters the user chooses : date, stock, language, hotel_id, mobile. The prediction is done with our Classical Target Encoding XGBoost model with 11 input features. <br />
@@ -54,34 +55,34 @@ We trained the model for the 11 or 7 most influent inputs, playing with GridSear
 
 XGB with Target Encoding seems to be better than with OneHot Encoding on our dataset (cf. R2 score and RMSE). However OneHot Encoding did best on the Defi dataset.
 
-Below are different RMSE and R2 quantities for different models, as well as the computational time. Training with OneHot Encoding is faster in our case. It seems strange because OneHot implies more input parameters. The Target Encoder used is maybe not optimal.  <br /> 
+Below are different RMSE and R2 quantities for different models, as well as the computational time. Training with OneHot Encoding is faster in our case. It seems strange because OneHot Encoding implies more input parameters. The Target Encoder used is probably not optimal.  <br /> 
 
-* XGB O 11 inputs <br />
+* XGB OneHot 11 inputs <br />
 computational time: 1685 seconds <br />
 RMSE= 1.10379 <br />
 R2= 0.99983 <br />
 
-* XGB O 7 inputs <br />
+* XGB OneHot 7 inputs <br />
 computational time: 1516 seconds <br />
 RMSE= 1.57410 <br />
 R2= 0.99964 <br />
 
-* XGB CT 11 inputs <br />
+* XGB Classical Target 11 inputs <br />
 computational time: 2148 seconds <br />
 RMSE= 1.04919 <br />
 R2= 0.99984 <br />
 
-* XGB CT 7 inputs <br />
+* XGB Classical Target 7 inputs <br />
 computational time: 1652 seconds <br />
 RMSE= 1.53339 <br />
 R2= 0.99966 <br />
 
-* XGB ST 10 11 inputs  <br /> 
+* XGB Smoothing Target 10 11 inputs  <br /> 
 computational time: 1930 seconds  <br /> 
 RMSE= 1.00960  <br /> 
 R2= 0.99985  <br /> 
 
-* XGB ST 100 11 inputs <br />
+* XGB Smoothing Target 100 11 inputs <br />
 computational time: 2031 seconds <br />
 RMSE= 1.01197 <br />
 R2= 0.99985 <br />
