@@ -3,9 +3,12 @@ import pandas as pd
 import panel as pn
 import sys  	
 import os
+import time
 
 import matplotlib.pyplot as plt
 
+from sklearn.compose import make_column_selector as selector
+from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from category_encoders import TargetEncoder
@@ -80,9 +83,9 @@ class TargetEncoderSmooth(BaseEstimator, TransformerMixin):
             uniques = X[col].unique()
             for unique in uniques:
                 #tmap[unique] = y[X[col]==unique].mean()
-                counts = y[X[col]==unique].count()
-                means = y[X[col]==unique].mean()
-                tmap[unique] = (counts * means + 10 * mean)/(counts + 10)
+                counts = pd.DataFrame(y[X[col]==unique]).count()
+                means = pd.DataFrame(y[X[col]==unique]).mean()
+                tmap[unique] = (counts * means + 100 * mean)/(counts + 100)
             self.maps[col] = tmap
             
         return self
@@ -180,77 +183,107 @@ if __name__ == '__main__':
     print("*** model with " + ansI + " inputs ***")
     ansC = input("* Do we use OneHotEncoder or Classical TargetEncoder or Smooth TargetEncoder ? (type O or CT or ST)")
     if ansC=='O':
-        Categorical_transformer = OneHotEncoder()
-        print("*** XGBRegressor with OneHotEncoder ***")
+        Preprocessor = ColumnTransformer(
+            transformers=[
+                ("Cat_encoder", OneHotEncoder(), selector(dtype_include="category")),
+                ("Standard_scaler", StandardScaler(), selector(dtype_exclude="category")),
+                ]
+            )
+        
+        print("*** XGBRegressor with OneHotEncoder without GridSearch ***")
+        
+        pip = Pipeline(steps=[("Preprocessor", Preprocessor),
+                      ("Boosting", XGBRegressor(n_estimators=3000,max_depth=10)),
+                      ]
+               )
+        
+        #print(pip)
+        
+        print("*** model training ***")
+        t0 = time.perf_counter()
+        pip.fit(X_train, y_train)
+        
     else : 
+        
         if ansC=='CT':
             Categorical_transformer = TargetEncoder()
             print("*** XGBRegressor with Classical TargetEncoder ***")
+            ansP = input("* Do we use no GridSearch, GridSearch for XGB, GridSearch for Classical TargetEncoder? (type NG or XG or TG)")
         else :
             ansC=='ST'
             Categorical_transformer = TargetEncoderSmooth()
-            print("*** XGBRegressor with Smooth TargetEncoder ***")
+            print("*** XGBRegressor with Smooth TargetEncoder with weight=100 ***")
+            ansP = input("* Do we use no GridSearch or GridSearch for XGB? (type NG or XG)")
+
     
-    ansP = input("* Do we use no GridSearch, GridSearch for XGB, GridSearch for Classical TargetEncoder? (type NG or XG or TG)")
-    
-    if ansP == 'NG':
+        if ansP == 'NG':
             
-        print("*** no GridSearch ***")
-        print("*** XGBRegressor with n_estimators=3000 and max_depth=10 ***")
-        print("*** model training ***")
-        
-        pip = Pipeline(steps=[("Cat_encoder", Categorical_transformer),
-                      ("Standard_scaler", StandardScaler()),
-                      ("Boosting", XGBRegressor(n_estimators=3000,max_depth=10)),
-                      ]
-               )
-        
-        pip.fit(X_train, y_train)
-    
-    else :
-        
-        if ansP == 'XG':
-        
-            print("*** GridSearch for XGBoost ***")
+            print("*** no GridSearch ***")
+            print("*** XGBRegressor with n_estimators=3000 and max_depth=10 ***")
             print("*** model training ***")
-            
-            pip = Pipeline(steps=[("Cat_encoder", Categorical_transformer),
-                      ("Standard_scaler", StandardScaler()),
-                      ("Boosting", XGBRegressor()),
-                      ]
-               )
         
-            param_grid = {
-                "Boosting__n_estimators":[1000, 3000, 5000],
-                "Boosting__max_depth": [7, 10, 13],
-                }
-             
+            pip = Pipeline(steps=[("Cat_encoder", Categorical_transformer),
+                                  ("Standard_scaler", StandardScaler()),
+                                  ("Boosting", XGBRegressor(n_estimators=3000,max_depth=10)),
+                                  ]
+                           )
+        
+            #print(pip)
+            t0 = time.perf_counter()
+            pip.fit(X_train, y_train)
+    
         else :
-            print("*** GridSearch for Classical Target ***")
-            print("*** model training ***")
-            
-            pip = Pipeline(steps=[("Cat_encoder", Categorical_transformer),
-                      ("Standard_scaler", StandardScaler()),
-                      ("Boosting", XGBRegressor(n_estimators=3000,max_depth=10)),
-                      ]
-               )
-            
-            param_grid = {
-                "Cat_encoder__min_samples_leaf":[1,10,20],
-                "Cat_encoder__smoothing": [0.2,1.,10.],
-                }
-            
-        grid_search = GridSearchCV(pip, param_grid, cv=5, n_jobs=-1)
-        grid_search.fit(X_train, y_train)
         
-        print("Best params:")
-        print(grid_search.best_params_)
+            if ansP == 'XG':
         
-        print(f"Internal CV score: {grid_search.best_score_:.3f}")
-        print(f"GridSearch score: {grid_search.score(X_test, y_test):.3f}")
+                print("*** GridSearch for XGBoost ***")
+                print("*** model training ***")
+            
+                pip = Pipeline(steps=[("Cat_encoder", Categorical_transformer),
+                                      ("Standard_scaler", StandardScaler()),
+                                      ("Boosting", XGBRegressor()),
+                                      ]
+                               )
+        
+                param_grid = {
+                    "Boosting__n_estimators":[1000, 3000, 5000],
+                    "Boosting__max_depth": [7, 10, 13],
+                    }
+             
+            else :
+                ansP == 'TG'
+                print("*** GridSearch for Classical Target ***")
+                print("*** model training ***")
+                    
+                pip = Pipeline(steps=[("Cat_encoder", Categorical_transformer),
+                                      ("Standard_scaler", StandardScaler()),
+                                      ("Boosting", XGBRegressor(n_estimators=3000,max_depth=10)),
+                                      ]
+                               )
+            
+                param_grid = {
+                    "Cat_encoder__min_samples_leaf":[1,10,20],
+                    "Cat_encoder__smoothing": [0.2,1.,10.],
+                    }
+            
+            grid_search = GridSearchCV(pip, param_grid, cv=5, n_jobs=-1)
+            
+            #print(grid_search)
+            t0 = time.clock()
+            grid_search.fit(X_train, y_train)
+            
+            print("Best params:")
+            print(grid_search.best_params_)
+        
+            print(f"Internal CV score: {grid_search.best_score_:.3f}")
+            print(f"GridSearch score: {grid_search.score(X_test, y_test):.3f}")
     
-        pip = grid_search
+            pip = grid_search
     
+    t1 = time.perf_counter()
+    time = t1-t0
+    
+    print("computational time: "+str(time)+" seconds")
     
     print("   ")
     print("*** plots ***")
@@ -261,7 +294,7 @@ if __name__ == '__main__':
     plt.xlabel(u"predict prices")
     plt.ylabel(u"observed prices")
     #plt.show(block=False)
-    plt.savefig('./results_store/ytest-vs-yhat.png')
+    plt.savefig('./results_store/XGB'+ ansI + ansC +'_ytest-vs-yhat.png')
     
     plt.figure(2)
     plt.plot(y_hat,y_test-y_hat,"o")
@@ -269,7 +302,7 @@ if __name__ == '__main__':
     plt.ylabel(u"residuals")
     plt.hlines(0,0,500)
     #plt.show(block=False)
-    plt.savefig('./results_store/residuals-vs-yhat.png')
+    plt.savefig('./results_store/XGB'+ ansI + ansC +'_residuals-vs-yhat.png')
         
     print("*** RMSE + R2 ***")
     print("RMSE=",mean_squared_error(y_test, y_hat, squared=False))  
@@ -281,7 +314,7 @@ if __name__ == '__main__':
     if ansM=='y':
         #dump(pip, 'XGB_model_saved.joblib')
         #pickle.dump(pip, open('XGB11_Target_model_saved_Final.sav', 'wb'))
-        pickle.dump(pip, open('XGB'+ ansI +'_Target_model_saved_Final.pkl', 'wb'))
+        pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.pkl', 'wb'))
     
     print("   ")
     print("*** predict test Defi ***")
