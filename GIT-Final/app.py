@@ -1,13 +1,13 @@
 import gradio as gr
 import pandas as pd
-import joblib
 import datasets
 import numpy as np
+import pickle
 import warnings
 
 warnings.filterwarnings("ignore")
 
-model = joblib.load('./XGB11_Target_model_saved_Final.pkl')
+model = pickle.load(open('./XGB11_Target_model_saved_Final.pkl','rb'))
 
 in1 = gr.inputs.Slider(minimum=0, maximum=44, step=1)#date
 in2 = gr.inputs.Slider(minimum=1, maximum=100, step=1) #stock
@@ -25,10 +25,10 @@ inputs = [in1, in2, in4, in5, in6]
 outputs = "text"
 
 
-def infer(date,stock,language,mobile,hotel_id):#city
+def infer(date,stock,language,mobile,hotel_id):
 
-  input_dataframe = pd.DataFrame([date,stock,language,mobile,hotel_id]).T #city
-  input_dataframe.columns = ["date","stock","language","mobile","hotel_id"] #,"city"
+  input_dataframe = pd.DataFrame([date,stock,language,mobile,hotel_id]).T 
+  input_dataframe.columns = ["date","stock","language","mobile","hotel_id"] 
 
   #ajout des features_hotels
   #hotels = pd.read_csv('/content/gdrive/My Drive/Defi-IA/features_hotels.csv', index_col=['hotel_id', 'city'])
@@ -51,11 +51,8 @@ def infer(date,stock,language,mobile,hotel_id):#city
   input_complete["parking"]=pd.Categorical(input_complete["parking"],ordered=False)
   input_complete["pool"]=pd.Categorical(input_complete["pool"],ordered=False)
   input_complete["children_policy"]=pd.Categorical(input_complete["children_policy"],ordered=False)
-  #print(input_complete)
   return "You, as a/an "+str(language)+" speaker, chose to spend a night in hotel "+ str(hotel_id)+ " situated in "+str(input_complete["city"][0])+" in "+str(date)+" day(s). You supposed that "+str(input_complete["stock"][0])+ " rooms are still available. We estimate the price of your night at : " + str(model.predict(input_complete)[0])
-#infer(1,10,'finnish',3,999)
+
 
 I = gr.Interface(fn = infer, inputs = inputs, outputs = "text")
 I.launch(share=True)
-
-#debug=True, share=True
