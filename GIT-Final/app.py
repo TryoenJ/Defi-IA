@@ -3,8 +3,11 @@ import pandas as pd
 import joblib
 import datasets
 import numpy as np
+import warnings
 
-model = joblib.load('./XGB_Target_model_saved.joblib')
+warnings.filterwarnings("ignore")
+
+model = joblib.load('./XGB11_Target_model_saved_Final.pkl')
 
 in1 = gr.inputs.Slider(minimum=0, maximum=44, step=1)#date
 in2 = gr.inputs.Slider(minimum=1, maximum=100, step=1) #stock
@@ -52,4 +55,7 @@ def infer(date,stock,language,mobile,hotel_id):#city
   return "You, as a/an "+str(language)+" speaker, chose to spend a night in hotel "+ str(hotel_id)+ " situated in "+str(input_complete["city"][0])+" in "+str(date)+" day(s). You supposed that "+str(input_complete["stock"][0])+ " rooms are still available. We estimate the price of your night at : " + str(model.predict(input_complete)[0])
 #infer(1,10,'finnish',3,999)
 
-gr.Interface(fn = infer, inputs = inputs, outputs = "text").launch(debug=True, share=True);
+I = gr.Interface(fn = infer, inputs = inputs, outputs = "text")
+I.launch(share=True)
+
+#debug=True, share=True
