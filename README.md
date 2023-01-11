@@ -44,7 +44,7 @@ To use the scripts for training the model or launching the gradio application fr
 
 9. Launch the gradio application with: **python app.py**
 
-10. If you want to train the model, use the command : **python train.py** <br /> . XGBoost model is used with a Category Encoder that can be chosen. GridSearch can be used to find the best parameters of the XGBoost model (n_estimators and max_depth) and the best parameters of the Classical Target Encoding (min_samples_leaf and smoothing) if chosen for category encoding. 
+10. If you want to train the model, use the command : **python train.py**. <br /> XGBoost model is used with a Category Encoder that can be chosen. GridSearch can be used to find the best parameters of the XGBoost model (n_estimators and max_depth) and the best parameters of the Classical Target Encoding (min_samples_leaf and smoothing) if chosen for categorical encoding. 
 
 11. If you want to compute and plot the MSE as a function of some input features, use the command : **python MSE.py** <br /> 
 
