@@ -31,9 +31,9 @@ To use the scripts for training the model or launching the gradio application fr
 
 4. Navigate to the directory containing the repository: **cd Defi-IA/GIT-Final**
 
-5. Build the Docker image using the following command: **docker build -t [image_name] .**
+5. Build the Docker image, with the name of your choice, using the following command: **docker build -t [image_name] .**
 
-6. Start a new container based on the image_name image, and open a command shell within the container: <br /> 
+6. Start a new container, with the name of your choice, based on the image_name image, and open a command shell within the container: <br /> 
 **docker run -it --name [container_name] -v [absolute_path_to_the_folder_of_the_cloned_repository]:/workspace/[folder_name_in_the_container] [image_name]** <br />
 
 7. Navigate in the container in the directory :
