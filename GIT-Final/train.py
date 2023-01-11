@@ -314,7 +314,11 @@ if __name__ == '__main__':
     if ansM=='y':
         #dump(pip, 'XGB_model_saved.joblib')
         #pickle.dump(pip, open('XGB11_Target_model_saved_Final.sav', 'wb'))
-        pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.pkl', 'wb'))
+        pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.sav', 'wb'))
+        #pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.pkl', 'wb'))
+        
+        #ENREGISTRER LES POIDS !!!
+        
     
     print("   ")
     print("*** predict test Defi ***")
