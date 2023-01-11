@@ -22,7 +22,7 @@ FROM python:3.8
 
 # Install the required libraries
 RUN pip install numpy pandas panel matplotlib scikit-learn xgboost \
- category_encoders joblib pandas_profiling eli5 shap seaborn gradio \
+ category_encoders joblib pandas_profiling eli5 shap seaborn gradio==3.12.0 \
  datasets
 
 #fixer le port de sortie
