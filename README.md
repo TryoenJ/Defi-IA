@@ -5,7 +5,7 @@ This project is for the kaggle competition (https://www.kaggle.com/competitions/
 The aim of the project is to accurately predict the price of a hotel room for a given night, taking into account various factors such as the location of the hotel, the language spoken by the person requesting the room, or the date of the request.
 
 
-To explain our work for this project, you will find different scripts: <br />
+Different scripts compose this project : <br />
 
 * *train.py* : This script is used to train a XGBoost model using either OneHotEncoder or Classical TargetEncoder or Smooth TargetEncoder for categorical encoding and provides the computational time of the process. TargetEncoder function of category_encoders was used for Classical Target Encoding, where two parameters (min_samples_leaf and smoothing) can be tuned to add smoothing. A TargetEncoderSmooth class was written for TargetEncoder with smoothing weight=10, based on Max Halford idea.
 The model can be fine-tuned using GridSearch or trained with pre-selected best parameters obtained with GridSearch. Two plots are generated in ./results_store directory, which represent respectively observed prices versus predicted prices and residuals versus predicted prices. <br />
@@ -50,11 +50,11 @@ To use the scripts for training the model or launching the gradio application fr
 
    
 ## Results
-We trained the model for all inputs except nb_requetes and for the 11 or 7 most influent inputs, playing with GridSearch and Categorical Encoding. Parameters n_estimators=3000 and max_depth=10 were retained for the XGBoost model. Concerning Classical Target Encoding, it was difficult to find the best parameters ; consequently no smoothing was added. For Smoothing Target, smoothing weight parameter m was fixed to 10 and 100 but it should have been tuned with GridSearch.
+We trained the model for the 11 or 7 most influent inputs, playing with GridSearch and Categorical Encoding. Parameters n_estimators=3000 and max_depth=10 were retained for the XGBoost model. Concerning Classical Target Encoding, it was difficult to find the best parameters ; consequently no smoothing was added. For Smoothing Target, smoothing weight parameter m was fixed to 10 and 100 but it should have been tuned with GridSearch.
 
 XGB with Target Encoding seems to be better than with OneHot Encoding on our dataset (cf. R2 score and RMSE). However OneHot Encoding did best on the Defi dataset.
 
-Below are different RMSE and R2 quantities for different models, as well as the computational time. Training with OneHot Encoding is faster in our case. It seems strange because OneHot implies more input parameters. Maybe the Target Encoder used is not optimal.  <br /> 
+Below are different RMSE and R2 quantities for different models, as well as the computational time. Training with OneHot Encoding is faster in our case. It seems strange because OneHot implies more input parameters. The Target Encoder used is maybe not optimal.  <br /> 
 
 * XGB O 11 inputs <br />
 computational time: 1685 seconds <br />
