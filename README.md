@@ -45,13 +45,13 @@ To use the scripts for training the model or launching the gradio application fr
 
 9. Launch the gradio application with: **python app.py**
 
-10. If you want to train the model, use the command : **python train.py** <br /> XGBoost model is used with a Category Encoder that can be chosen. GridSearch can be used to find the best parameters of the XGBoost model (n_estimators and max_depth) and the best parameters of the Classical Target Encoding (min_samples_leaf and smoothing) if chosen for categorical encoding. 
+10. If you want to train the model, use the command : **python train.py** <br /> XGBoost model is used with a categorical encoder that can be chosen. GridSearch can be used to find the best parameters of the XGBoost model (n_estimators and max_depth) and the best parameters of the Classical Target Encoding (min_samples_leaf and smoothing) if chosen for categorical encoding. 
 
 11. If you want to compute and plot the MSE as a function of some input features, use the command : **python MSE.py** <br /> 
 
    
 ## Results
-We trained the model for the 11 or 7 most influent inputs, playing with GridSearch and Categorical Encoding. Parameters n_estimators=3000 and max_depth=10 were retained for the XGBoost model. Concerning Classical Target Encoding, it was difficult to find the best parameters ; consequently no smoothing was added. For Smoothing Target, smoothing weight parameter m was fixed to 10 and 100 but it should have been tuned with GridSearch.
+We trained the model for the 11 or 7 most influent inputs, playing with GridSearch and categorical encoding. Parameters n_estimators=3000 and max_depth=10 were retained for the XGBoost model. Concerning Classical Target Encoding, it was difficult to find the best parameters ; consequently no smoothing was added. For Smoothing Target, smoothing weight parameter m was fixed to 10 and 100 but it should have been tuned with GridSearch.
 
 XGB with Target Encoding seems to be better than with OneHot Encoding on our dataset (cf. R2 score and RMSE). However OneHot Encoding did best on the Defi dataset.
 
