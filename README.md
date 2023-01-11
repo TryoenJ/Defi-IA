@@ -17,7 +17,7 @@ The model can be fine-tuned using GridSearch or trained with pre-selected best p
       
 * **MSE-11.ipynb** : A notebook containing an analysis of Mean Square Errors as a function of some input features, with a Target Encoding XGBoost model with 11 input features, illustrated with boxplots for K folds <br />
       
-* **MSE-7.ipynb** : A notebook containing an analysis of Mean Square Errors as a function of some input features, with a Target Encoding XGBoost model with 7 input features, illustrated with boxplots for K folds <br />
+* **MSE-7.ipynb** : Same as above with 7 input features <br />
       
 * **MSE.py** : Same as above with python. Number of features to be chosen. Plots are saved in ./results_store directory. <br /> 
       
