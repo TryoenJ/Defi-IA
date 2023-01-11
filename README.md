@@ -51,7 +51,7 @@ To use the scripts for training the model or launching the gradio application fr
 
    
 ## Results
-We trained the model for the 11 or 7 most influent inputs, playing with GridSearch and categorical encoding. Parameters n_estimators=3000 and max_depth=10 were retained for the XGBoost model. Concerning Classical Target Encoding, it was difficult to find the best parameters ; consequently no smoothing was added. For Smoothing Target, smoothing weight parameter m was fixed to 10 and 100 but it should have been tuned with GridSearch.
+We trained the model for the 11 or 7 most influent inputs, playing with GridSearch and categorical encoding. Parameters n_estimators=3000 and max_depth=10 were retained for the XGBoost model. Concerning Classical Target Encoding, it was difficult to find the best parameters ; consequently no smoothing was added. For Smoothing Target, smoothing weight parameter m was fixed to 10 and 100 but it should have been tuned with GridSearch by adding it as an attribute to the class.
 
 XGB with Target Encoding seems to be better than with OneHot Encoding on our dataset (cf. R2 score and RMSE). However OneHot Encoding did best on the Defi dataset.
 
