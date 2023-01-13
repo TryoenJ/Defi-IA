@@ -11,7 +11,7 @@ Different scripts compose this project : <br />
 TargetEncoder function of category_encoders was used for Classical Target Encoding, where two parameters (min_samples_leaf and smoothing) can be tuned to add smoothing. A TargetEncoderSmooth class was written for TargetEncoder with smoothing weight=10, based on Max Halford idea.<br />
 The model can be fine-tuned using GridSearch or trained with pre-selected best parameters obtained with GridSearch. Two plots are generated in ./results_store directory, which represent respectively observed prices versus predicted prices and residuals versus predicted prices. <br />
 
-* **app.py** : A gradio application, that gives an estimation of the price you should pay considering the following input parameters the user chooses : date, stock, language, hotel_id, mobile. The prediction is done with our Classical Target Encoding XGBoost model with 11 input features. <br />
+* **app.py** : A gradio application, that gives an estimation of the price you should pay considering the following input parameters the user chooses : date, stock, language, hotel_id and mobile. The prediction is done with our Classical Target Encoding XGBoost model with 11 input features. <br />
       
 * **analysis.ipynb** :  A notebook containing an analysis of our dataset and an interpretability of the model <br />
       
@@ -44,6 +44,8 @@ To use the scripts for training the model or launching the gradio application fr
 8. Unzip the final model: **unzip XGB11_Target_model_saved_Final.zip**
 
 9. Launch the gradio application with: **python app.py**
+
+Copy and paste the public link that will appear on the bash on a web browser page. Then select date, stock, language, hotel_id and mobile of your choice and validate to obtain an estimation of the price you should pay. The hypothesis made here is that the user has already selected an hotel in order to avoid inconsistency between the chosen hotel and city.
 
 10. If you want to train the model, use the command : **python train.py** <br /> XGBoost model is used with a categorical encoder that can be chosen. GridSearch can be used to find the best parameters of the XGBoost model (n_estimators and max_depth) and the best parameters of the Classical Target Encoding (min_samples_leaf and smoothing) if chosen for categorical encoding. 
 
