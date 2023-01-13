@@ -163,11 +163,13 @@ if __name__ == '__main__':
 
     data["price"]=pd.DataFrame(data["price"], dtype=float)
     
-    ansI = input("* Do we take the 12 inputs to build the model ? all the inputs except nb_requete ? the 7 most influent inputs ? (type 12 or 11 or 7)")
+    ansI = input("* Do we take the 12 inputs to build the model ? all the inputs except nb_requete ? the 7 most influent inputs ? (type 12 or 11 or 10 or 7)")
     if ansI=='12':
         X = data[["nb_requete","date","stock","city","language","mobile","hotel_id","group","brand","parking","pool","children_policy"]]
     elif ansI == '11':
         X = data[["date","stock","city","language","mobile","hotel_id","group","brand","parking","pool","children_policy"]]
+    elif ansI == '10':
+        X = data[["date","stock","city","language","mobile","group","brand","parking","pool","children_policy"]]
     else :
         X = data[["date","stock","city","language","hotel_id","group","brand"]]
     
@@ -312,13 +314,9 @@ if __name__ == '__main__':
     print("*** save ***")
     ansM = input("* Do we save the model ? (type y or n)")
     if ansM=='y':
-        #dump(pip, 'XGB_model_saved.joblib')
-        #pickle.dump(pip, open('XGB11_Target_model_saved_Final.sav', 'wb'))
-        pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.sav', 'wb'))
-        #pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.pkl', 'wb'))
-        
-        #ENREGISTRER LES POIDS !!!
-        
+        #dump(pip,'XGB'+ ansI + ansC +'_model_saved_Final.sav')
+        #pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.sav', 'wb'))
+        pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.pkl', 'wb'))
     
     print("   ")
     print("*** predict test Defi ***")
