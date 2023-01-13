@@ -44,9 +44,9 @@ To use the scripts for training the model or launching the gradio application fr
 8. Unzip the final model: **unzip XGB11_Target_model_saved_Final.zip**
 
 9. Launch the gradio application with: **python app.py**
-
 Copy and paste the public link that will appear on the bash on a web browser page. Then select date, stock, language, hotel_id and mobile of your choice and validate to obtain an estimation of the price you should pay. The hypothesis made here is that the user has already selected an hotel in order to avoid inconsistency between the chosen hotel and city. <br />
-10. If you want to train the model, use the command : **python train.py** <br /> XGBoost model is used with a categorical encoder that can be chosen. GridSearch can be used to find the best parameters of the XGBoost model (n_estimators and max_depth) and the best parameters of the Classical Target Encoding (min_samples_leaf and smoothing) if chosen for categorical encoding. 
+
+10. If you want to train the model, use the command : **python train.py** <br /> XGBoost model is used with a categorical encoder that can be chosen. GridSearch can be used to find the best parameters of the XGBoost model (n_estimators and max_depth) and the best parameters of the Classical Target Encoding (min_samples_leaf and smoothing) if chosen for categorical encoding. <br />
 
 11. If you want to compute and plot the MSE as a function of some input features, use the command : **python MSE.py** <br /> 
 
