@@ -314,8 +314,8 @@ if __name__ == '__main__':
     print("*** save ***")
     ansM = input("* Do we save the model ? (type y or n)")
     if ansM=='y':
-        #dump(pip,'XGB'+ ansI + ansC +'_model_saved_Final.sav')
-        #pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.sav', 'wb'))
+        dump(pip,'XGB'+ ansI + ansC +'_model_saved_Final.joblib')
+        pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.sav', 'wb'))
         pickle.dump(pip, open('XGB'+ ansI + ansC +'_model_saved_Final.pkl', 'wb'))
     
     print("   ")
