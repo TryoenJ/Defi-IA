@@ -71,7 +71,7 @@ RMSE= 1.57410 <br />
 R2= 0.99964 <br />
 
 * XGB Classical Target 11 inputs <br />
-computational time: 2148 seconds <br />
+computational time: 1993 seconds <br />
 RMSE= 1.04919 <br />
 R2= 0.99984 <br />
 
@@ -85,7 +85,7 @@ computational time: 1930 seconds  <br />
 RMSE= 1.00960  <br /> 
 R2= 0.99985  <br /> 
 
-* XGB Smoothing Target 100 11 inputs <br />
-computational time: 2031 seconds <br />
-RMSE= 1.01197 <br />
-R2= 0.99985 <br />
+* XGB Smoothing Target 10 7 inputs <br />
+computational time: 1768 seconds <br />
+RMSE= 1.54058 <br />
+R2= 0.99966 <br />
